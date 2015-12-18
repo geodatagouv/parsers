@@ -60,9 +60,10 @@ MD_DataIdentification:
         #         - string
         # resourceFormat:
         #     type: MD_Format
-        # extent:
-        #     type: object
-        #     accept: EX_Extent
+        extent:
+            array: true
+            type: object
+            accept: EX_Extent
         # descriptiveKeywords:
         #     type: object
         #     array: true
