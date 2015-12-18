@@ -36,5 +36,10 @@
         "language": "fre",
         "characterSet": "8859part1",
         "topicCategory": "imageryBaseMapsEarthCover"
+    },
+    "dataQualityInfo": {
+        "lineage": {
+            "statement": "Données saisies sur la base des données IGN SCAN25 et IGN BDOrtho."
+        }
     }
 }

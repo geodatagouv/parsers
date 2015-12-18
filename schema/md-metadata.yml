@@ -28,6 +28,8 @@ MD_Metadata:
                 - MD_DataIdentification
                 - SV_ServiceIdentification
             dissolve: true
+        dataQualityInfo:
+            accept: DQ_DataQuality
 
 MD_DataIdentification:
     properties:
@@ -38,10 +40,10 @@ MD_DataIdentification:
             type: string
             accept: CharacterString
             fallbackText: true
-        # purpose:
-        #     type: string
-        #     accept: CharacterString
-        #     fallbackText: true
+        purpose:
+            type: string
+            accept: CharacterString
+            fallbackText: true
         language:
             type: string
             accept: LanguageCode
@@ -71,6 +73,17 @@ MD_DataIdentification:
         graphicOverview:
             array: true
             accept: MD_BrowseGraphic
+
+DQ_DataQuality:
+    properties:
+        lineage:
+            accept: LI_Lineage
+
+LI_Lineage:
+    properties:
+        statement:
+            accept: CharacterString
+            fallbackText: true
 
 CI_Citation:
     properties:
