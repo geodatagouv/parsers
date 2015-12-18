@@ -1,0 +1,38 @@
+{
+  "name": "inspire-parsers",
+  "version": "0.1.0",
+  "description": "Essential XML parsers to deal with Inspire and OGC standarts",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgmap-inspire/parsers.git"
+  },
+  "keywords": [
+    "Inspire",
+    "OGC",
+    "XML",
+    "parsers",
+    "ISO-19139",
+    "Dublin",
+    "Core"
+  ],
+  "author": "Jérôme Desboeufs <jerome.desboeufs@data.gouv.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sgmap-inspire/parsers/issues"
+  },
+  "homepage": "https://github.com/sgmap-inspire/parsers#readme",
+  "dependencies": {
+    "htmlparser2": "^3.9.0",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.1",
+    "js-yaml": "^3.4.6",
+    "mocha": "^2.3.4"
+  }
+}

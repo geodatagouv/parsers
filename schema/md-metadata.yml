@@ -1,0 +1,208 @@
+MD_Metadata:
+    properties:
+        fileIdentifier:
+            type: string
+        metadataStandardName:
+            type: string
+        metadataStandardVersion:
+            type: string
+        characterSet:
+            type: string
+            accept: MD_CharacterSetCode
+            fallbackText: true
+        hierarchyLevel:
+            type: string
+            accept: MD_ScopeCode
+            fallbackText: true
+        language:
+            type: string
+            accept: LanguageCode
+            fallbackText: true
+        dateStamp:
+            type: date
+        contact:
+            accept: CI_ResponsibleParty
+        identificationInfo:
+            type: object
+            accept:
+                - MD_DataIdentification
+                - SV_ServiceIdentification
+            dissolve: true
+
+MD_DataIdentification:
+    properties:
+        citation:
+            type: object
+            accept: CI_Citation
+        abstract:
+            type: string
+            accept: CharacterString
+            fallbackText: true
+        # purpose:
+        #     type: string
+        #     accept: CharacterString
+        #     fallbackText: true
+        language:
+            type: string
+            accept: LanguageCode
+            fallbackText: true
+        characterSet:
+            type: string
+            accept: MD_CharacterSetCode
+            fallbackText: true
+        topicCategory:
+            type: string
+        # maintenanceAndUpdateFrequency:
+        #     type:
+        #         - MD_MaintenanceFrequencyCode
+        #         - string
+        # resourceFormat:
+        #     type: MD_Format
+        # extent:
+        #     type: object
+        #     accept: EX_Extent
+        # descriptiveKeywords:
+        #     type: object
+        #     array: true
+        #     accept: MD_Keywords
+        pointOfContact:
+            array: true
+            accept: CI_ResponsibleParty
+        graphicOverview:
+            array: true
+            accept: MD_BrowseGraphic
+
+CI_Citation:
+    properties:
+        title:
+            type: string
+        alternateTitle:
+            type: string
+        edition:
+            type: date
+        identifier:
+            type: string
+
+CI_ResponsibleParty:
+    properties:
+        organisationName:
+            type: string
+        individualName:
+            type: string
+        contactInfo:
+            accept: CI_Contact
+        role:
+            accept: CI_RoleCode
+            fallbackText: true
+
+CI_Contact:
+    properties:
+        address:
+            accept: CI_Address
+            dissolve: true
+        phone:
+            accept: CI_Telephone
+            dissolve: true
+
+CI_Telephone:
+    properties:
+        voice:
+            accept: CharacterString
+            fallbackText: true
+        facsimile:
+            accept: CharacterString
+            fallbackText: true
+
+CI_Address:
+    properties:
+        deliveryPoint:
+            accept: CharacterString
+            fallbackText: true
+        city:
+            accept: CharacterString
+            fallbackText: true
+        administrativeArea:
+            accept: CharacterString
+            fallbackText: true
+        postalCode:
+            accept: CharacterString
+            fallbackText: true
+        country:
+            accept: CharacterString
+            fallbackText: true
+        electronicMailAddress:
+            accept: CharacterString
+            fallbackText: true
+
+EX_Extent:
+    properties:
+        description:
+            type: string
+            accept: CharacterString
+            fallbackText: true
+        geographicElement:
+            type: object
+            accept: EX_GeographicBoundingBox
+
+EX_GeographicBoundingBox:
+    properties:
+        westBoundLongitude:
+            type: number
+            format: float
+        eastBoundLongitude:
+            type: number
+            format: float
+        southBoundLatitude:
+            type: number
+            format: float
+        northBoundLatitude:
+            type: number
+            format: float
+
+MD_Keywords:
+    properties:
+        keyword:
+            array: true
+            type: string
+            accept: CharacterString
+            fallbackText: true
+
+MD_BrowseGraphic:
+    properties:
+        fileName:
+            type: string
+        fileDescription:
+            type: string
+        fileType:
+            type: string
+
+MD_CharacterSetCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+MD_ScopeCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+LanguageCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+MD_MaintenanceFrequencyCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+CI_RoleCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+DateTime:
+    type: date
+
+CharacterString:
+    type: string

@@ -1,0 +1,40 @@
+{
+    "fileIdentifier": "ff65bbd1-ab5c-4118-8b1a-2cae338efacf",
+    "language": "fre",
+    "characterSet": "utf8",
+    "hierarchyLevel": "dataset",
+    "contact": {
+        "organisationName": "GéoPicardie",
+        "contactInfo": {
+            "address": {
+                "electronicMailAddress": "contact@geopicardie.fr"
+            }
+        },
+        "role": "pointOfContact"
+    },
+    "dateStamp": "2015-06-19T16:39:42",
+    "metadataStandardName": "ISO 19115:2003/19139",
+    "metadataStandardVersion": "1.0",
+    "identificationInfo": {
+        "citation": {
+            "title": "Tâche urbaine - Oise-la-Vallée (1947)"
+        },
+        "abstract": "Étendue de la tâche urbaine en 1947 sur les territoires suivants : Communauté de communes des Trois Forêts, Communauté de communes Pierre - Sud - Oise, Communauté de l'agglomération Creilloise, Communauté de communes des Pays d’Oise et d’Halatte, Communauté de communes du Liancourtois, Communauté de communes de la Plaine d'Estrées, Communauté de Communes de la Basse Automne, Agglomération de la région de Compiègne.",
+        "pointOfContact": [
+            {
+                "organisationName": "Oise-la-Vallée",
+                "role": "custodian"
+            }
+        ],
+        "graphicOverview": [
+            {
+                "fileName": "http://www.geopicardie.fr:80/geonetwork-private/srv/eng/resources.get?uuid=ff65bbd1-ab5c-4118-8b1a-2cae338efacf&fname=apercu_olv_tache_urbaine_1947.png",
+                "fileDescription": "large_thumbnail",
+                "fileType": "png"
+            }
+        ],
+        "language": "fre",
+        "characterSet": "8859part1",
+        "topicCategory": "imageryBaseMapsEarthCover"
+    }
+}
