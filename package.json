@@ -16,8 +16,7 @@
     "XML",
     "parsers",
     "ISO-19139",
-    "Dublin",
-    "Core"
+    "Dublin Core"
   ],
   "author": "Jérôme Desboeufs <jerome.desboeufs@data.gouv.fr>",
   "license": "MIT",
