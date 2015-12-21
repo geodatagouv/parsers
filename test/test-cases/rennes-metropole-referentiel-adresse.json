@@ -215,6 +215,9 @@
         ]
     },
     "dataQualityInfo": {
+        "scope": {
+            "level": "series"
+        },
         "lineage": {
             "statement": "Numérisation initiale réalisée à partir de sources diverses : cadastre, orthophotographie 2008 et 2011, plans d'aménagement, visites terrain, etc.\n\nLes mises à jour se font selon différentes sources : signalement, plans d'aménagement, orthophotographie, etc."
         }

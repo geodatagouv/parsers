@@ -49,6 +49,10 @@ MD_DataIdentification:
             type: string
             accept: CharacterString
             fallbackText: true
+        credit:
+            type: string
+            accept: CharacterString
+            fallbackText: true
         language:
             type: string
             accept: LanguageCode
@@ -59,10 +63,9 @@ MD_DataIdentification:
             fallbackText: true
         topicCategory:
             type: string
-        # maintenanceAndUpdateFrequency:
-        #     type:
-        #         - MD_MaintenanceFrequencyCode
-        #         - string
+        resourceMaintenance:
+            accept: MD_MaintenanceInformation
+            fallbackText: true
         # resourceFormat:
         #     type: MD_Format
         extent:
@@ -125,6 +128,8 @@ DQ_DataQuality:
     properties:
         lineage:
             accept: LI_Lineage
+        scope:
+            accept: DQ_Scope
 
 LI_Lineage:
     properties:
@@ -132,12 +137,20 @@ LI_Lineage:
             accept: CharacterString
             fallbackText: true
 
+DQ_Scope:
+    properties:
+        level:
+            accept: MD_ScopeCode
+            fallbackText: true
+
 CI_Citation:
     properties:
         title:
-            type: string
+            accept: CharacterString
+            fallbackText: true
         alternateTitle:
-            type: string
+            accept: CharacterString
+            fallbackText: true
         edition:
             type: date
         identifier:
@@ -227,6 +240,12 @@ CI_Address:
             fallbackText: true
         electronicMailAddress:
             accept: CharacterString
+            fallbackText: true
+
+MD_MaintenanceInformation:
+    properties:
+        maintenanceAndUpdateFrequency:
+            accept: MD_MaintenanceFrequencyCode
             fallbackText: true
 
 EX_Extent:

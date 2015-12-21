@@ -207,6 +207,9 @@
         ]
     },
     "dataQualityInfo": {
+        "scope": {
+            "level": "dataset"
+        },
         "lineage": {
             "statement": "Données saisies sur la base des données IGN SCAN25 et IGN BDOrtho."
         }
