@@ -106,6 +106,7 @@
         "language": "fre",
         "characterSet": "utf8",
         "topicCategory": "oceans",
+        "spatialRepresentationType": "vector",
         "extent": [
             {
                 "geographicElement": {

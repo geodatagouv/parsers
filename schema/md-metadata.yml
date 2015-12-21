@@ -84,6 +84,9 @@ MD_DataIdentification:
             accept: MD_BrowseGraphic
         spatialResolution:
             accept: MD_Resolution
+        spatialRepresentationType:
+            accept: MD_SpatialRepresentationTypeCode
+            fallbackText: true
         status:
             accept: MD_ProgressCode
             fallbackText: true
@@ -210,6 +213,9 @@ CI_OnlineResource:
         name:
             accept: CharacterString
             fallbackText: true
+        function:
+            accept: CI_OnLineFunctionCode
+            fallbackText: true
 
 CI_Telephone:
     properties:
@@ -330,6 +336,16 @@ CI_DateTypeCode:
     attribute: codeListValue
 
 MD_ProgressCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+CI_OnLineFunctionCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+MD_SpatialRepresentationTypeCode:
     type: string
     from: attributes
     attribute: codeListValue
