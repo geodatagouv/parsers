@@ -180,6 +180,32 @@
             }
         ]
     },
+    "distributionInfo": {
+        "distributionFormat": [
+            {
+                "name": "ESRI Shapefile",
+                "version": "1.0"
+            }
+        ],
+        "transferOptions": [
+            {
+                "onLine": [
+                    {
+                        "description": "Tâche urbaine - Oise-la-Vallée (1947) - couche WMS du portail de GéoPicardie",
+                        "linkage": "http://www.geopicardie.fr/geoserver/wms",
+                        "name": "olv:fon_tu_geo_tacheurbaine_p_5_1947",
+                        "protocol": "OGC:WMS"
+                    },
+                    {
+                        "description": "Lien vers la fiche de métadonnées d'origine",
+                        "linkage": "http://www.geopicardie.fr/geonetwork/apps/georchestra/?uuid=ff65bbd1-ab5c-4118-8b1a-2cae338efacf",
+                        "name": "Lien vers la fiche de métadonnées d'origine",
+                        "protocol": "WWW:LINK-1.0-http--link"
+                    }
+                ]
+            }
+        ]
+    },
     "dataQualityInfo": {
         "lineage": {
             "statement": "Données saisies sur la base des données IGN SCAN25 et IGN BDOrtho."

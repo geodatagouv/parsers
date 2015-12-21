@@ -33,6 +33,8 @@ MD_Metadata:
             dissolve: true
         dataQualityInfo:
             accept: DQ_DataQuality
+        distributionInfo:
+            accept: MD_Distribution
 
 MD_DataIdentification:
     properties:
@@ -82,6 +84,30 @@ MD_DataIdentification:
         status:
             accept: MD_ProgressCode
             fallbackText: true
+
+MD_Distribution:
+    properties:
+        distributionFormat:
+            array: true
+            accept: MD_Format
+        transferOptions:
+            array: true
+            accept: MD_DigitalTransferOptions
+
+MD_Format:
+    properties:
+        name:
+            accept: CharacterString
+            fallbackText: true
+        version:
+            accept: CharacterString
+            fallbackText: true
+
+MD_DigitalTransferOptions:
+    properties:
+        onLine:
+            array: true
+            accept: CI_OnlineResource
 
 MD_Resolution:
     properties:
@@ -165,6 +191,12 @@ CI_OnlineResource:
             type: string
         protocol:
             type: string
+        description:
+            accept: CharacterString
+            fallbackText: true
+        name:
+            accept: CharacterString
+            fallbackText: true
 
 CI_Telephone:
     properties:

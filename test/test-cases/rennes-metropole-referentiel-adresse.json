@@ -174,6 +174,46 @@
             }
         ]
     },
+    "distributionInfo": {
+        "distributionFormat": [
+            {
+                "name": "ESRI Shapefile",
+                "version": "1.0"
+            },
+            {
+                "name": "KML",
+                "version": "1.0"
+            },
+            {
+                "name": "DWG",
+                "version": "2007"
+            }
+        ],
+        "transferOptions": [
+            {
+                "onLine": [
+                    {
+                        "linkage": "http://www.data.rennes-metropole.fr/les-donnees/catalogue/?tx_icsopendatastore_pi1[uid]=217",
+                        "protocol": "WWW:DOWNLOAD-1.0-http--download"
+                    },
+                    {
+                        "description": "GéoRennesMétropole",
+                        "linkage": "http://geo.rennesmetropole.fr/",
+                        "protocol": "WWW:LINK-1.0-http--link"
+                    }
+                ]
+            },
+            {
+                "onLine": [
+                    {
+                        "description": "Visualiseur GéoBretagne",
+                        "linkage": "http://geobretagne.fr/mapfishapp/",
+                        "protocol": "WWW:LINK-1.0-http--link"
+                    }
+                ]
+            }
+        ]
+    },
     "dataQualityInfo": {
         "lineage": {
             "statement": "Numérisation initiale réalisée à partir de sources diverses : cadastre, orthophotographie 2008 et 2011, plans d'aménagement, visites terrain, etc.\n\nLes mises à jour se font selon différentes sources : signalement, plans d'aménagement, orthophotographie, etc."
