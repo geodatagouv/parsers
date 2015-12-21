@@ -130,6 +130,8 @@ CI_ResponsibleParty:
             type: string
         individualName:
             type: string
+        positionName:
+            type: string
         contactInfo:
             accept: CI_Contact
         role:
