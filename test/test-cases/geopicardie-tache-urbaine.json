@@ -35,6 +35,11 @@
         ],
         "language": "fre",
         "characterSet": "8859part1",
+        "spatialResolution": {
+            "equivalentScale": {
+                "denominator": "5000"
+            }
+        },
         "topicCategory": "imageryBaseMapsEarthCover",
         "extent": [
             {

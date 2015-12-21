@@ -74,6 +74,19 @@ MD_DataIdentification:
         graphicOverview:
             array: true
             accept: MD_BrowseGraphic
+        spatialResolution:
+            accept:
+                - MD_Resolution
+
+MD_Resolution:
+    properties:
+        equivalentScale:
+            accept: MD_RepresentativeFraction
+
+MD_RepresentativeFraction:
+    properties:
+        denominator:
+            type: string
 
 DQ_DataQuality:
     properties:
