@@ -1,0 +1,167 @@
+{
+    "fileIdentifier": "aaff85f2-3529-4a0e-a263-95ad355acbc3",
+    "language": "fre",
+    "characterSet": "utf8",
+    "hierarchyLevel": "series",
+    "contact": {
+        "individualName": "Frédéric CHAUVIN - Service SIG",
+        "organisationName": "Rennes Métropole",
+        "contactInfo": {
+            "phone": {
+                "voice": "02 23 62 22 70"
+            },
+            "address": {
+                "electronicMailAddress": "sig@rennesmetropole.fr"
+            }
+        },
+        "role": "pointOfContact"
+    },
+    "dateStamp": "2015-08-04T09:45:09",
+    "metadataStandardName": "ISO 19115:2003/19139",
+    "metadataStandardVersion": "1.0",
+    "identificationInfo": {
+        "citation": {
+            "title": "Référentiel voies et adresses de Rennes Métropole (diffusion)",
+            "alternateTitle": "RVA",
+            "date": [
+                {
+                    "date": "2013-03-01",
+                    "dateType": "creation"
+                },
+                {
+                    "date": "2015-08-02",
+                    "dateType": "revision"
+                }
+            ],
+            "identifier": "fr-243500139-referentiels-voies_adresses-rvadiffusion"
+        },
+        "abstract": "Rennes Métropole dispose depuis 2013 d'un Référentiel Voies et Adresses (RVA) sur les communes de l’agglomération.\n\nCe lot de données rassemble les voies, les tronçons de voies et les adresses des 43 communes de Rennes Métropole.\n\nLes adresses postales sont localisées par un point.\nUn tronçon est une ligne qui commence à une intersection ou une jonction et se termine à une autre intersection ou une autre jonction sauf dans le cas d'une impasse.\n\nVolumétrie approximative :\n- 14 400 voies nommées\n- 58 300 tronçons\n- 90 600 adresses",
+        "pointOfContact": [
+            {
+                "individualName": "Service SIG",
+                "organisationName": "Rennes Métropole - SIG",
+                "contactInfo": {
+                    "phone": {
+                        "voice": "02 23 62 22 70"
+                    },
+                    "address": {
+                        "deliveryPoint": "CS 20723",
+                        "city": "RENNES",
+                        "postalCode": "35207",
+                        "country": "France",
+                        "electronicMailAddress": "sig@rennesmetropole.fr"
+                    }
+                },
+                "role": "pointOfContact"
+            }
+        ],
+        "graphicOverview": [
+            {
+                "fileName": "http://carto2.rennesmetropole.fr/catalogue/images/rva.png",
+                "fileType": "png"
+            }
+        ],
+        "descriptiveKeywords": [
+            {
+                "keyword": [
+                    "Adresses",
+                    "Dénominations géographiques"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "GEMET - INSPIRE themes, version 1.0",
+                    "date": [
+                        {
+                            "date": "2008-06-01",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.inspire-theme"
+                }
+            },
+            {
+                "keyword": [
+                    "réseau routier"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "GEMET",
+                    "date": [
+                        {
+                            "date": "2009-09-22",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.gemet"
+                }
+            },
+            {
+                "keyword": [
+                    "référentiels : voies et adresses"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "GéoBretagne v 2.0",
+                    "date": [
+                        {
+                            "date": "2014-01-13",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.geobretagne"
+                }
+            },
+            {
+                "keyword": [
+                    "données ouvertes",
+                    "geobretagne"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "RM Diffusion v 1.1",
+                    "date": [
+                        {
+                            "date": "2014-02-12",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.rm_diffusion"
+                }
+            },
+            {
+                "keyword": [
+                    "rm.dgpdd.distrat.sig"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "RM Services v 1.1",
+                    "date": [
+                        {
+                            "date": "2014-02-12",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.rm_services"
+                }
+            }
+        ],
+        "language": "fre",
+        "characterSet": "utf8",
+        "topicCategory": "location",
+        "extent": [
+            {
+                "geographicElement": {
+                    "westBoundLongitude": "-2.12",
+                    "eastBoundLongitude": "-1.32",
+                    "southBoundLatitude": "47.87",
+                    "northBoundLatitude": "48.37"
+                }
+            }
+        ]
+    },
+    "dataQualityInfo": {
+        "lineage": {
+            "statement": "Numérisation initiale réalisée à partir de sources diverses : cadastre, orthophotographie 2008 et 2011, plans d'aménagement, visites terrain, etc.\n\nLes mises à jour se font selon différentes sources : signalement, plans d'aménagement, orthophotographie, etc."
+        }
+    }
+}
