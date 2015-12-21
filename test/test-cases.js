@@ -13,6 +13,7 @@ describe('Real test cases', function () {
         'geopicardie-tache-urbaine',
         'rennes-metropole-referentiel-adresse',
         'ifremer-multilang',
+        'siglr-malformed',
     ].forEach(testCase => {
         it(testCase + ' should be parsed successfully', function (done) {
             const parser = new Parser('MD_Metadata', definition);

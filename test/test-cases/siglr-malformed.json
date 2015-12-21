@@ -1,0 +1,149 @@
+{
+    "fileIdentifier": "{4D79726A-38A6-420A-9B79-EDF046ECEA96}",
+    "language": "fre",
+    "hierarchyLevel": "dataset",
+    "contact": {
+        "individualName": "SPET - DTV - Exploitation Transports",
+        "organisationName": "Montpellier Méditerranée Métropole",
+        "contactInfo": {
+            "phone": {
+                "voice": "04 67 13 61 97"
+            },
+            "address": {
+                "electronicMailAddress": "j.bachmann@montpellier3m.fr"
+            }
+        },
+        "role": "pointOfContact"
+    },
+    "dateStamp": "2015-08-17T16:16:42",
+    "metadataStandardName": "ISO 19115:2003/19139",
+    "metadataStandardVersion": "1.0",
+    "identificationInfo": {
+        "citation": {
+            "title": "Lignes de tramway - Montpellier Méditerranée Métropole",
+            "date": [
+                {
+                    "date": "2012-04-01",
+                    "dateType": "publication"
+                }
+            ],
+            "identifier": "{6910F260-77F7-409E-A913-FF39D5A49B2F}"
+        },
+        "abstract": "Lignes de tramway sur le territoire de Montpellier Méditerranée Métropole - Réseau TAM Avril 2012 (lignes 1, 2, 3 et 4).",
+        "pointOfContact": [
+            {
+                "individualName": "SPET - DTV - Exploitation Transports",
+                "organisationName": "Montpellier Méditerranée Métropole",
+                "contactInfo": {
+                    "phone": {
+                        "voice": "04 67 13 61 97"
+                    },
+                    "address": {
+                        "electronicMailAddress": "j.bachmann@montpellier3m.fr"
+                    }
+                },
+                "role": "owner"
+            }
+        ],
+        "graphicOverview": [
+            {
+                "fileName": "MMM_s.png",
+                "fileDescription": "thumbnail",
+                "fileType": "png"
+            },
+            {
+                "fileName": "MMM.png",
+                "fileDescription": "large_thumbnail",
+                "fileType": "png"
+            }
+        ],
+        "descriptiveKeywords": [
+            {
+                "keyword": [
+                    "Réseaux de transport"
+                ],
+                "thesaurusName": {
+                    "title": "GEMET - INSPIRE themes, version 1.0",
+                    "date": [
+                        {
+                            "date": "2008-06-01",
+                            "dateType": "publication"
+                        }
+                    ]
+                }
+            },
+            {
+                "keyword": [
+                    "TRAM",
+                    "TRAMWAY",
+                    "TAM",
+                    "TRANSPORT",
+                    "TRANSPORTS",
+                    "TRANSPORTS EN COMMUN",
+                    "TC",
+                    "DTV",
+                    "MONTPELLIER",
+                    "RESEAU",
+                    "données ouvertes"
+                ]
+            },
+            {
+                "keyword": [
+                    "secteur des services"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "external.theme.gemet"
+                }
+            },
+            {
+                "keyword": [
+                    "Services d'utilité publique et services publics"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "external.theme.inspire"
+                }
+            }
+        ],
+        "spatialRepresentationType": "vector",
+        "spatialResolution": {
+            "equivalentScale": {
+                "denominator": "25000"
+            }
+        },
+        "language": "fre",
+        "characterSet": "utf8",
+        "topicCategory": "transportation",
+        "extent": [
+            {
+                "geographicElement": {
+                    "westBoundLongitude": "3.6",
+                    "eastBoundLongitude": "4.4437",
+                    "southBoundLatitude": "43.4179",
+                    "northBoundLatitude": "43.9383"
+                }
+            }
+        ]
+    },
+    "distributionInfo": {
+        "transferOptions": [
+            {
+                "onLine": [
+                    {
+                        "linkage": "http://geoservice.siglr.org/wfsmmm?",
+                        "protocol": "OGC:WMS-1.1.1-http-get-map"
+                    }
+                ]
+            }
+        ]
+    },
+    "dataQualityInfo": {
+        "scope": {
+            "level": "dataset"
+        },
+        "lineage": {
+            "statement": "Numérisation Montpellier Méditerranée Métropole"
+        }
+    }
+}
