@@ -1,0 +1,191 @@
+{
+    "fileIdentifier": "4a7d3d79-edb8-45f5-b8ce-3b9bcd271b4f",
+    "language": "fre",
+    "characterSet": "utf8",
+    "hierarchyLevel": "dataset",
+    "contact": {
+        "organisationName": "Ifremer",
+        "contactInfo": {
+            "address": {
+                "electronicMailAddress": "jean.prou@ifremer.fr"
+            }
+        },
+        "role": "pointOfContact"
+    },
+    "dateStamp": "2015-03-18T18:00:50",
+    "metadataStandardName": "ISO 19115:2003/19139 - SEXTANT",
+    "metadataStandardVersion": "1.0",
+    "identificationInfo": {
+        "citation": {
+            "title": "EUROSHELL - Sites de production conchylicole",
+            "date": [
+                {
+                    "date": "2013-01-18T00:00:00",
+                    "dateType": "creation"
+                }
+            ],
+            "identifier": "SITES_PRODUCTIONS_CONCHYLICOLES_P"
+        },
+        "abstract": "Les sites de production conchylicoles peuvent prendre plusieurs réalités. Parfois, leur identification est réglementaire et sert à la classification sanitaire des zones de productions. Dans le projet Euroshell, le choix a été fait de cartographier les zones de production dont l’identification a du sens à la fois pour les scientifiques et pour les professionnels. Il s’agit alors d’un nombre restreint de zones, souvent correspondant à une réalité hydrographique. En effet, la conchyliculture est majoritairement installée dans des estuaires, embouchures, baies, fjords, rias ou lagunes.\r\n\r\nCette carte présente les sites de production conchylicole français, qui regroupent chacun plusieurs zones. Quelques informations sont données concernant les espèces produites, le nombre d'entreprises et/ou concessions et/ou producteurs, la quantité de production approximative.",
+        "status": "onGoing",
+        "credit": "Ifremer",
+        "pointOfContact": [
+            {
+                "organisationName": "Ifremer",
+                "contactInfo": {
+                    "address": {
+                        "electronicMailAddress": "jean.prou@ifremer.fr"
+                    }
+                },
+                "role": "pointOfContact"
+            }
+        ],
+        "resourceMaintenance": {
+            "maintenanceAndUpdateFrequency": "asNeeded"
+        },
+        "graphicOverview": [
+            {
+                "fileName": "http://www.ifremer.fr:80/geonetwork/srv/eng/resources.get?uuid=4a7d3d79-edb8-45f5-b8ce-3b9bcd271b4f&fname=site_production_s.png",
+                "fileDescription": "thumbnail",
+                "fileType": "png"
+            },
+            {
+                "fileName": "http://www.ifremer.fr:80/geonetwork/srv/eng/resources.get?uuid=4a7d3d79-edb8-45f5-b8ce-3b9bcd271b4f&fname=site_production.JPG",
+                "fileDescription": "large_thumbnail",
+                "fileType": "JPG"
+            }
+        ],
+        "descriptiveKeywords": [
+            {
+                "keyword": [
+                    "/Activités humaines/Cultures marines"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "Thèmes Sextant",
+                    "date": [
+                        {
+                            "date": "2015-02-05T10:26:52",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.local.theme.sextant-theme"
+                }
+            },
+            {
+                "keyword": [
+                    "conchyliculture",
+                    "shellfish production area",
+                    "oysters, mussels, clams"
+                ],
+                "type": "theme"
+            },
+            {
+                "keyword": [
+                    "Installations agricoles et aquacoles"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "GEMET - INSPIRE themes, version 1.0",
+                    "date": [
+                        {
+                            "date": "2009-09-22",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.inspire-theme"
+                }
+            },
+            {
+                "keyword": [
+                    "Données ouvertes"
+                ],
+                "type": "theme"
+            }
+        ],
+        "language": "fre",
+        "characterSet": "utf8",
+        "topicCategory": "oceans",
+        "extent": [
+            {
+                "geographicElement": {
+                    "westBoundLongitude": "-4.89633",
+                    "eastBoundLongitude": "9.53679",
+                    "southBoundLatitude": "41.58419",
+                    "northBoundLatitude": "51.005547"
+                }
+            }
+        ]
+    },
+    "distributionInfo": {
+        "transferOptions": [
+            {
+                "onLine": [
+                    {
+                        "linkage": "http://www.ifremer.fr/services/wms/euroshell",
+                        "protocol": "OGC:WMS-1.1.1-http-get-map",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_FRANCE_PT",
+                        "description": "France"
+                    },
+                    {
+                        "linkage": "http://www.ifremer.fr/services/wms/euroshell",
+                        "protocol": "OGC:WMS-1.1.1-http-get-map",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_IRLANDE_PT",
+                        "description": "Irlande"
+                    },
+                    {
+                        "linkage": "http://www.ifremer.fr/services/wms/euroshell",
+                        "protocol": "OGC:WMS-1.1.1-http-get-map",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_ITALY_PT",
+                        "description": "Italy"
+                    },
+                    {
+                        "linkage": "http://www.ifremer.fr/services/wms/euroshell",
+                        "protocol": "OGC:WMS-1.1.1-http-get-map",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_NETHERLANDS_PT",
+                        "description": "Netherlands"
+                    },
+                    {
+                        "linkage": "http://www.ifremer.fr/services/wms/euroshell",
+                        "protocol": "OGC:WMS-1.1.1-http-get-map",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_UK_PT",
+                        "description": "UK"
+                    },
+                    {
+                        "protocol": "WFS",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_FRANCE_PT",
+                        "description": "France"
+                    },
+                    {
+                        "protocol": "WFS",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_IRLANDE_PT",
+                        "description": "Irlande"
+                    },
+                    {
+                        "protocol": "WFS",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_ITALY_PT",
+                        "description": "Italy"
+                    },
+                    {
+                        "protocol": "WFS",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_NETHERLANDS_PT",
+                        "description": "Netherlands"
+                    },
+                    {
+                        "protocol": "WFS",
+                        "name": "EUROSHELL_ZONES_PRODUCTION_UK_PT",
+                        "description": "UK"
+                    }
+                ]
+            }
+        ]
+    },
+    "dataQualityInfo": {
+        "scope": {
+            "level": "dataset"
+        },
+        "lineage": {
+            "statement": "Les données ont été fournies par les représentations professionnelles de chaque pays et partenaires du projet Euroshell. Ces partenaires nationaux ont généré ces données ou utilisé des données déjà existantes."
+        }
+    }
+}
