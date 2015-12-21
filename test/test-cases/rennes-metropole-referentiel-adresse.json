@@ -3,6 +3,7 @@
     "language": "fre",
     "characterSet": "utf8",
     "hierarchyLevel": "series",
+    "hierarchyLevelName": "Ensemble de Série de données",
     "contact": {
         "individualName": "Frédéric CHAUVIN - Service SIG",
         "organisationName": "Rennes Métropole",
@@ -12,7 +13,8 @@
             },
             "address": {
                 "electronicMailAddress": "sig@rennesmetropole.fr"
-            }
+            },
+            "hoursOfService": "08h00 - 12h00 et 14h00 - 17h00"
         },
         "role": "pointOfContact"
     },
@@ -36,6 +38,7 @@
             "identifier": "fr-243500139-referentiels-voies_adresses-rvadiffusion"
         },
         "abstract": "Rennes Métropole dispose depuis 2013 d'un Référentiel Voies et Adresses (RVA) sur les communes de l’agglomération.\n\nCe lot de données rassemble les voies, les tronçons de voies et les adresses des 43 communes de Rennes Métropole.\n\nLes adresses postales sont localisées par un point.\nUn tronçon est une ligne qui commence à une intersection ou une jonction et se termine à une autre intersection ou une autre jonction sauf dans le cas d'une impasse.\n\nVolumétrie approximative :\n- 14 400 voies nommées\n- 58 300 tronçons\n- 90 600 adresses",
+        "status": "completed",
         "pointOfContact": [
             {
                 "individualName": "Service SIG",
@@ -45,12 +48,21 @@
                         "voice": "02 23 62 22 70"
                     },
                     "address": {
-                        "deliveryPoint": "CS 20723",
+                        "deliveryPoint": [
+                            "Hôtel de Rennes Métropole",
+                            "4 avenue Henri Fréville",
+                            "CS 20723"
+                        ],
                         "city": "RENNES",
                         "postalCode": "35207",
                         "country": "France",
                         "electronicMailAddress": "sig@rennesmetropole.fr"
-                    }
+                    },
+                    "onlineResource": {
+                        "linkage": "http://www.metropole.rennes.fr/",
+                        "protocol": "WWW:LINK-1.0-http--link"
+                    },
+                    "hoursOfService": "08h00 - 12h00 et 14h00 - 17h00"
                 },
                 "role": "pointOfContact"
             }
@@ -145,6 +157,9 @@
                 }
             }
         ],
+        "spatialResolution": {
+            "distance": "10"
+        },
         "language": "fre",
         "characterSet": "utf8",
         "topicCategory": "location",

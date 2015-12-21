@@ -14,6 +14,9 @@ MD_Metadata:
             type: string
             accept: MD_ScopeCode
             fallbackText: true
+        hierarchyLevelName:
+            accept: CharacterString
+            fallbackText: true
         language:
             type: string
             accept: LanguageCode
@@ -75,13 +78,17 @@ MD_DataIdentification:
             array: true
             accept: MD_BrowseGraphic
         spatialResolution:
-            accept:
-                - MD_Resolution
+            accept: MD_Resolution
+        status:
+            accept: MD_ProgressCode
+            fallbackText: true
 
 MD_Resolution:
     properties:
         equivalentScale:
             accept: MD_RepresentativeFraction
+        distance:
+            type: string
 
 MD_RepresentativeFraction:
     properties:
@@ -146,6 +153,18 @@ CI_Contact:
         phone:
             accept: CI_Telephone
             dissolve: true
+        hoursOfService:
+            accept: CharacterString
+            fallbackText: true
+        onlineResource:
+            accept: CI_OnlineResource
+
+CI_OnlineResource:
+    properties:
+        linkage:
+            type: string
+        protocol:
+            type: string
 
 CI_Telephone:
     properties:
@@ -159,6 +178,7 @@ CI_Telephone:
 CI_Address:
     properties:
         deliveryPoint:
+            array: true
             accept: CharacterString
             fallbackText: true
         city:
@@ -254,6 +274,11 @@ MD_KeywordTypeCode:
     attribute: codeListValue
 
 CI_DateTypeCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+MD_ProgressCode:
     type: string
     from: attributes
     attribute: codeListValue
