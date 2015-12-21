@@ -17,7 +17,13 @@
     "metadataStandardVersion": "1.0",
     "identificationInfo": {
         "citation": {
-            "title": "Tâche urbaine - Oise-la-Vallée (1947)"
+            "title": "Tâche urbaine - Oise-la-Vallée (1947)",
+            "date": [
+                {
+                    "date": "2011-06-01",
+                    "dateType": "creation"
+                }
+            ]
         },
         "abstract": "Étendue de la tâche urbaine en 1947 sur les territoires suivants : Communauté de communes des Trois Forêts, Communauté de communes Pierre - Sud - Oise, Communauté de l'agglomération Creilloise, Communauté de communes des Pays d’Oise et d’Halatte, Communauté de communes du Liancourtois, Communauté de communes de la Plaine d'Estrées, Communauté de Communes de la Basse Automne, Agglomération de la région de Compiègne.",
         "pointOfContact": [
@@ -31,6 +37,64 @@
                 "fileName": "http://www.geopicardie.fr:80/geonetwork-private/srv/eng/resources.get?uuid=ff65bbd1-ab5c-4118-8b1a-2cae338efacf&fname=apercu_olv_tache_urbaine_1947.png",
                 "fileDescription": "large_thumbnail",
                 "fileType": "png"
+            }
+        ],
+        "descriptiveKeywords": [
+            {
+                "keyword": [
+                    "CC des Pays d'Oise et d'Halatte",
+                    "CC des Trois Forêts",
+                    "CC du Liancourtois",
+                    "CA Creilloise",
+                    "CA de la Région de Compiègne",
+                    "CC Pierre - Sud - Oise",
+                    "CC de la Basse Automne",
+                    "CC de la Plaine d'Estrées"
+                ],
+                "thesaurusName": {
+                    "date": [
+                        {
+                            "date": "2013-03-11",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.place.geopicardie-epci",
+                    "title": "EPCI"
+                },
+                "type": "place"
+            },
+            {
+                "keyword": [
+                    "zone urbaine",
+                    "occupation du sol"
+                ],
+                "thesaurusName": {
+                    "date": [
+                        {
+                            "date": "2010-01-13",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.gemet",
+                    "title": "GEMET - Concepts, version 2.4"
+                },
+                "type": "theme"
+            },
+            {
+                "keyword": [
+                    "Occupation des terres"
+                ],
+                "thesaurusName": {
+                    "date": [
+                        {
+                            "date": "2008-06-01",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.inspire-theme",
+                    "title": "GEMET - INSPIRE themes, version 1.0 INSPIRE themes"
+                },
+                "type": "theme"
             }
         ],
         "language": "fre",

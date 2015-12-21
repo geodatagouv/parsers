@@ -64,10 +64,10 @@ MD_DataIdentification:
             array: true
             type: object
             accept: EX_Extent
-        # descriptiveKeywords:
-        #     type: object
-        #     array: true
-        #     accept: MD_Keywords
+        descriptiveKeywords:
+            type: object
+            array: true
+            accept: MD_Keywords
         pointOfContact:
             array: true
             accept: CI_ResponsibleParty
@@ -109,6 +109,20 @@ CI_Citation:
             type: date
         identifier:
             type: string
+        date:
+            accept: CI_Date
+            array: true
+
+CI_Date:
+    properties:
+        date:
+            accept:
+                - Date
+                - DateTime
+            fallbackText: true
+        dateType:
+            accept: CI_DateTypeCode
+            fallbackText: true
 
 CI_ResponsibleParty:
     properties:
@@ -190,9 +204,13 @@ MD_Keywords:
     properties:
         keyword:
             array: true
-            type: string
             accept: CharacterString
             fallbackText: true
+        type:
+            accept: MD_KeywordTypeCode
+            fallbackText: true
+        thesaurusName:
+            accept: CI_Citation
 
 MD_BrowseGraphic:
     properties:
@@ -228,7 +246,20 @@ CI_RoleCode:
     from: attributes
     attribute: codeListValue
 
+MD_KeywordTypeCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
+CI_DateTypeCode:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
 DateTime:
+    type: date
+
+Date:
     type: date
 
 CharacterString:
