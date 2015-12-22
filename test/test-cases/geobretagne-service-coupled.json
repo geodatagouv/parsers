@@ -1,0 +1,148 @@
+{
+    "fileIdentifier": "fr-org.geobretagne.crcbs.wfs",
+    "language": "fre",
+    "characterSet": "utf8",
+    "hierarchyLevel": "service",
+    "hierarchyLevelName": "Service de téléchargement WFS",
+    "contact": {
+        "organisationName": "partenariat GéoBretagne",
+        "contactInfo": {
+            "phone": {
+                "voice": "+22399334556"
+            },
+            "address": {
+                "deliveryPoint": [
+                    "10 rue Maurice Fabre"
+                ],
+                "city": "RENNES",
+                "administrativeArea": "Ille-et-Vilaine",
+                "postalCode": "35065",
+                "country": "FRANCE",
+                "electronicMailAddress": "info@geobretagne.fr"
+            },
+            "onlineResource": {
+                "linkage": "http://geobretagne.fr/"
+            }
+        },
+        "role": "pointOfContact"
+    },
+    "dateStamp": "2015-12-21",
+    "metadataStandardName": "ISO 19119/2005",
+    "metadataStandardVersion": "1.0",
+    "identificationInfo": {
+        "citation": {
+            "title": "Service de téléchargement direct (WFS) du CRCBS",
+            "date": [
+                {
+                    "date": "2015-12-21",
+                    "dateType": "revision"
+                }
+            ]
+        },
+        "abstract": "Le service permet de télécharger les données du partenariat Comité Régional de Conchyliculture Bretagne Sud - GéoBretagne selon différents formats SIG.",
+        "pointOfContact": [
+            {
+                "organisationName": "partenariat GéoBretagne",
+                "contactInfo": {
+                    "phone": {
+                        "voice": "+22399334556"
+                    },
+                    "address": {
+                        "deliveryPoint": [
+                            "10 rue Maurice Fabre"
+                        ],
+                        "city": "RENNES",
+                        "postalCode": "35065",
+                        "country": "FRANCE",
+                        "electronicMailAddress": "info@geobretagne.fr"
+                    },
+                    "onlineResource": {
+                        "linkage": "http://geobretagne.fr/"
+                    }
+                },
+                "role": "pointOfContact"
+            }
+        ],
+        "descriptiveKeywords": [
+            {
+                "keyword": [
+                    "InfoFeatureAccessService"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "INSPIRE Service taxonomy",
+                    "date": [
+                        {
+                            "date": "2008-12-03",
+                            "dateType": "publication"
+                        }
+                    ]
+                }
+            },
+            {
+                "keyword": [
+                    "Service d’accès aux éléments",
+                    "wfs 2.0.0"
+                ],
+                "type": "theme"
+            }
+        ],
+        "serviceType": "download",
+        "serviceTypeVersion": "2.0.0",
+        "extent": [
+            {
+                "geographicElement": {
+                    "westBoundLongitude": "-4.59130336259",
+                    "eastBoundLongitude": "-2.39603299035",
+                    "southBoundLatitude": "47.1821623883",
+                    "northBoundLatitude": "48.4006141523"
+                }
+            }
+        ],
+        "coupledResource": [
+            {
+                "operationName": "GetCapabilities",
+                "identifier": "e16944c7-8c80-4ac6-85f4-c88958f39094",
+                "scopedName": "entreprise_conchylicole_crcbs"
+            },
+            {
+                "operationName": "DescribeFeatureType",
+                "identifier": "e16944c7-8c80-4ac6-85f4-c88958f39094",
+                "scopedName": "entreprise_conchylicole_crcbs"
+            },
+            {
+                "operationName": "GetFeature",
+                "identifier": "e16944c7-8c80-4ac6-85f4-c88958f39094",
+                "scopedName": "entreprise_conchylicole_crcbs"
+            }
+        ],
+        "couplingType": "tight"
+    },
+    "distributionInfo": {
+        "distributionFormat": [
+            {
+                "name": "OGC:WFS",
+                "version": "2.0.0"
+            }
+        ],
+        "transferOptions": [
+            {
+                "onLine": [
+                    {
+                        "linkage": "http://geobretagne.fr/geoserver/crcbs/wfs?SERVICE=WFS&REQUEST=GetCapabilities&",
+                        "protocol": "OGC:WFS-2.0.0-http-get-capabilities",
+                        "name": "Document de description du service au format WFS_Capabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    "dataQualityInfo": {
+        "scope": {
+            "level": "service",
+            "levelDescription": {
+                "other": "Service de téléchargement WFS"
+            }
+        }
+    }
+}

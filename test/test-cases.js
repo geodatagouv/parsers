@@ -14,6 +14,7 @@ describe('Real test cases', function () {
         'rennes-metropole-referentiel-adresse',
         'ifremer-multilang',
         'siglr-malformed',
+        'geobretagne-service-coupled',
     ].forEach(testCase => {
         it(testCase + ' should be parsed successfully', function (done) {
             const parser = new Parser('MD_Metadata', definition);
