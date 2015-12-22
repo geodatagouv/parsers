@@ -1,4 +1,5 @@
 /* eslint-env mocha, node */
+/* eslint comma-dangle:0 */
 'use strict';
 
 const expect = require('expect.js');
