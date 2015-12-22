@@ -1,0 +1,25 @@
+{
+    "searchResults": {
+        "numberOfRecordsMatched": "965",
+        "numberOfRecordsReturned": "10",
+        "elementSet": "full",
+        "nextRecord": "11",
+        "children": [
+            {
+                "@elementType": "MD_Metadata",
+                "fileIdentifier": "22c47096-64da-44e8-a04e-58f9779c6995",
+                "hierarchyLevel": "service"
+            },
+            {
+                "@elementType": "MD_Metadata",
+                "fileIdentifier": "22c47096-64da-44e8-a04e-58f9779c6995",
+                "hierarchyLevel": "service"
+            },
+            {
+                "@elementType": "MD_Metadata",
+                "fileIdentifier": "22c47096-64da-44e8-a04e-58f9779c6995",
+                "hierarchyLevel": "service"
+            }
+        ]
+    }
+}

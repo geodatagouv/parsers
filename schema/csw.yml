@@ -1,0 +1,22 @@
+GetRecordsResponse:
+    type: object
+    children:
+        SearchResults:
+            renameTo: searchResults
+
+SearchResults:
+    type: object
+    attributes:
+        numberOfRecordsMatched:
+            type: string
+        numberOfRecordsReturned:
+            type: string
+        elementSet:
+            type: string
+        nextRecord:
+            type: string
+    container: true
+    acceptedChildren:
+        - MD_Metadata
+        - Record
+        - FC_FeatureCatalog
