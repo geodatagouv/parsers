@@ -10,6 +10,7 @@ MD_Metadata:
             type: string
             accept: MD_CharacterSetCode
             fallbackText: true
+            renameTo: metadataCharacterSet
         hierarchyLevel:
             type: string
             accept: MD_ScopeCode
@@ -21,19 +22,24 @@ MD_Metadata:
             type: string
             accept: LanguageCode
             fallbackText: true
+            renameTo: metadataLanguage
         dateStamp:
             type: date
         contact:
             accept: CI_ResponsibleParty
+            renameTo: metadataContact
         identificationInfo:
             type: object
             accept:
                 - MD_DataIdentification
                 - SV_ServiceIdentification
+            merge: true
         dataQualityInfo:
             accept: DQ_DataQuality
+            merge: true
         distributionInfo:
             accept: MD_Distribution
+            merge: true
 
 MD_DataIdentification:
     properties:
@@ -271,6 +277,7 @@ CI_ResponsibleParty:
             type: string
         contactInfo:
             accept: CI_Contact
+            merge: true
         role:
             accept: CI_RoleCode
             fallbackText: true
@@ -281,16 +288,19 @@ CI_Contact:
             accept: CI_Address
         phone:
             accept: CI_Telephone
+            merge: true
         hoursOfService:
             accept: CharacterString
             fallbackText: true
         onlineResource:
             accept: CI_OnlineResource
+            renameTo: website
 
 CI_OnlineResource:
     properties:
         linkage:
             type: string
+            renameTo: location
         protocol:
             type: string
         description:
@@ -308,9 +318,11 @@ CI_Telephone:
         voice:
             accept: CharacterString
             fallbackText: true
+            renameTo: phone
         facsimile:
             accept: CharacterString
             fallbackText: true
+            renameTo: fax
 
 CI_Address:
     properties:
@@ -333,6 +345,7 @@ CI_Address:
         electronicMailAddress:
             accept: CharacterString
             fallbackText: true
+            renameTo: email
 
 MD_MaintenanceInformation:
     properties:
