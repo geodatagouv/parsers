@@ -91,6 +91,87 @@ MD_DataIdentification:
             accept: MD_ProgressCode
             fallbackText: true
 
+SV_ServiceIdentification:
+    properties:
+        citation:
+            type: object
+            accept: CI_Citation
+        abstract:
+            type: string
+            accept: CharacterString
+            fallbackText: true
+        purpose:
+            type: string
+            accept: CharacterString
+            fallbackText: true
+        credit:
+            type: string
+            accept: CharacterString
+            fallbackText: true
+        language:
+            type: string
+            accept: LanguageCode
+            fallbackText: true
+        characterSet:
+            type: string
+            accept: MD_CharacterSetCode
+            fallbackText: true
+        topicCategory:
+            type: string
+        resourceMaintenance:
+            accept: MD_MaintenanceInformation
+            fallbackText: true
+        # resourceFormat:
+        #     type: MD_Format
+        extent:
+            array: true
+            type: object
+            accept: EX_Extent
+        descriptiveKeywords:
+            type: object
+            array: true
+            accept: MD_Keywords
+        pointOfContact:
+            array: true
+            accept: CI_ResponsibleParty
+        graphicOverview:
+            array: true
+            accept: MD_BrowseGraphic
+        spatialResolution:
+            accept: MD_Resolution
+        spatialRepresentationType:
+            accept: MD_SpatialRepresentationTypeCode
+            fallbackText: true
+        status:
+            accept: MD_ProgressCode
+            fallbackText: true
+        couplingType:
+            accept: SV_CouplingType
+            fallbackText: true
+        serviceType:
+            accept:
+                - CharacterString
+                - LocalName
+            fallbackText: true
+        serviceTypeVersion:
+            accept: CharacterString
+            fallbackText: true
+        coupledResource:
+            array: true
+            accept: SV_CoupledResource
+
+SV_CoupledResource:
+    properties:
+        identifier:
+            accept: CharacterString
+            fallbackText: true
+        operationName:
+            accept: CharacterString
+            fallback: true
+        ScopedName:
+            type: string
+            renameTo: scopedName
+
 MD_Distribution:
     properties:
         distributionFormat:
@@ -144,6 +225,14 @@ DQ_Scope:
     properties:
         level:
             accept: MD_ScopeCode
+            fallbackText: true
+        levelDescription:
+            accept: MD_ScopeDescription
+
+MD_ScopeDescription:
+    properties:
+        other:
+            accept: CharacterString
             fallbackText: true
 
 CI_Citation:
@@ -350,6 +439,11 @@ MD_SpatialRepresentationTypeCode:
     from: attributes
     attribute: codeListValue
 
+SV_CouplingType:
+    type: string
+    from: attributes
+    attribute: codeListValue
+
 DateTime:
     type: date
 
@@ -357,4 +451,7 @@ Date:
     type: date
 
 CharacterString:
+    type: string
+
+LocalName:
     type: string
