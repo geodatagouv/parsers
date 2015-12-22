@@ -30,7 +30,6 @@ MD_Metadata:
             accept:
                 - MD_DataIdentification
                 - SV_ServiceIdentification
-            dissolve: true
         dataQualityInfo:
             accept: DQ_DataQuality
         distributionInfo:
@@ -280,10 +279,8 @@ CI_Contact:
     properties:
         address:
             accept: CI_Address
-            dissolve: true
         phone:
             accept: CI_Telephone
-            dissolve: true
         hoursOfService:
             accept: CharacterString
             fallbackText: true
