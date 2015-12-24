@@ -2,17 +2,13 @@
 /* eslint comma-dangle:0 */
 'use strict';
 
-const expect = require('expect.js');
-const jsYaml = require('js-yaml');
 const fs = require('fs');
+const expect = require('expect.js');
 const Parser = require('../lib/parser');
-
-const definition = jsYaml.safeLoad(fs.readFileSync(__dirname + '/../schema/md-metadata.yml'));
-Object.assign(definition, jsYaml.safeLoad(fs.readFileSync(__dirname + '/../schema/csw.yml')));
 
 function createTestCase(name, schema) {
     it(name + ' should be parsed successfully', function (done) {
-        const parser = new Parser(schema, definition);
+        const parser = new Parser(schema);
         const xml = fs.createReadStream(__dirname + '/test-cases/' + name + '.xml');
         const expectedResult = require('./test-cases/' + name + '.json');
         xml.pipe(parser).once('result', result => {

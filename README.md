@@ -7,12 +7,10 @@ Essential XML parsers to deal with Inspire and OGC standarts
 ## Usage (experimental)
 
 ```js
-const jsYaml = require('js-yaml');
 const fs = require('fs');
 const Parser = require('inspire-parsers/lib/parser');
 
-const definition = jsYaml.safeLoad(fs.readFileSync(require.resolve('inspire-parsers/schema/md-metadata.yml')));
-const parser = new Parser('MD_Metadata', definition);
+const parser = new Parser('MD_Metadata');
 const xmlFile = fs.createReadStream(pathToXmlFile);
 
 xmlFile.pipe(parser).once('result', result => {
