@@ -4,7 +4,7 @@
 
 const fs = require('fs');
 const expect = require('expect.js');
-const Parser = require('../lib/parser');
+const Parser = require('../').Parser;
 
 function createTestCase(name, schema) {
     it(name + ' should be parsed successfully', function (done) {

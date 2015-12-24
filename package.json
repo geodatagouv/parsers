@@ -4,10 +4,10 @@
   "description": "Essential XML parsers to deal with Inspire and OGC standarts",
   "main": "index.js",
   "scripts": {
-    "test-integration": "istanbul cover _mocha",
+    "test-unit": "istanbul cover _mocha",
     "lint": "eslint test/**/*.js lib/**/*.js scripts/*.js *.js",
     "bundle-schema": "node scripts/bundle-schema",
-    "test": "npm run lint && npm run bundle-schema && npm run test-integration",
+    "test": "npm run lint && npm run bundle-schema && npm run test-unit",
     "prepublish": "npm run bundle-schema"
   },
   "repository": {

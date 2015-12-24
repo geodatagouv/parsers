@@ -6,14 +6,29 @@ Essential XML parsers to deal with Inspire and OGC standarts
 
 ## Usage (experimental)
 
+### Basic
+
 ```js
 const fs = require('fs');
-const Parser = require('inspire-parsers/lib/parser');
+const parse = require('inspire-parsers').parse;
+
+const xmlString = fs.readFileSync(pathToXmlFile);
+
+parse(xmlString, 'MD_Metadata', (err, result) => {
+    console.log(JSON.stringify(result, true, 4));
+});
+```
+
+### Stream
+
+```js
+const fs = require('fs');
+const Parser = require('inspire-parsers').Parser;
 
 const parser = new Parser('MD_Metadata');
-const xmlFile = fs.createReadStream(pathToXmlFile);
+const xmlStream = fs.createReadStream(pathToXmlFile);
 
-xmlFile.pipe(parser).once('result', result => {
+xmlStream.pipe(parser).once('result', result => {
     console.log(JSON.stringify(result, true, 4));
 });
 ```
