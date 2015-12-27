@@ -6,9 +6,9 @@ const fs = require('fs');
 const expect = require('expect.js');
 const Parser = require('../').Parser;
 
-function createTestCase(name, schema) {
+function createTestCase(name) {
     it(name + ' should be parsed successfully', function (done) {
-        const parser = new Parser(schema);
+        const parser = new Parser();
         const xml = fs.createReadStream(__dirname + '/test-cases/' + name + '.xml');
         const expectedResult = require('./test-cases/' + name + '.json');
         xml.pipe(parser).once('result', result => {
@@ -25,11 +25,11 @@ describe('Real test cases: MD_Metadata', function () {
         'ifremer-multilang',
         'siglr-malformed',
         'geobretagne-service-coupled',
-    ].forEach(testCase => createTestCase(testCase, 'MD_Metadata'));
+    ].forEach(testCase => createTestCase(testCase));
 });
 
 describe('Real test cases: GetRecordsResponse', function () {
     [
         'csw-getrecordsresponse',
-    ].forEach(testCase => createTestCase(testCase, 'GetRecordsResponse'));
+    ].forEach(testCase => createTestCase(testCase));
 });

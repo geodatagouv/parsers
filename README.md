@@ -14,7 +14,7 @@ const parse = require('inspire-parsers').parse;
 
 const xmlString = fs.readFileSync(pathToXmlFile);
 
-parse(xmlString, 'MD_Metadata', (err, result) => {
+parse(xmlString, (err, result) => {
     console.log(JSON.stringify(result, true, 4));
 });
 ```
@@ -25,7 +25,7 @@ parse(xmlString, 'MD_Metadata', (err, result) => {
 const fs = require('fs');
 const Parser = require('inspire-parsers').Parser;
 
-const parser = new Parser('MD_Metadata');
+const parser = new Parser();
 const xmlStream = fs.createReadStream(pathToXmlFile);
 
 xmlStream.pipe(parser).once('result', result => {
