@@ -1,7 +1,7 @@
 {
-  "name": "inspire-parsers",
+  "name": "inspire-parser",
   "version": "0.1.0",
-  "description": "Essential XML parsers to deal with Inspire and OGC standarts",
+  "description": "Powerful XML parser to deal with Inspire and OGC standarts",
   "main": "index.js",
   "scripts": {
     "test-unit": "istanbul cover _mocha",
