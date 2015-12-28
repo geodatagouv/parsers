@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "Powerful XML parser to deal with Inspire and OGC standarts",
   "main": "index.js",
+  "files": [
+      "lib/",
+      "index.js",
+      "bundled-schema.json"
+  ],
   "scripts": {
     "test-unit": "istanbul cover _mocha",
     "lint": "eslint test/**/*.js lib/**/*.js scripts/*.js *.js",
