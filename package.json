@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "description": "Powerful XML parser to deal with Inspire and OGC standarts",
   "main": "index.js",
+  "bin": {
+      "inspire2json": "cli.js"
+  },
   "files": [
       "lib/",
       "index.js",
+      "cli.js",
       "bundled-schema.json"
   ],
   "scripts": {
