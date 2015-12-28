@@ -1,0 +1,35 @@
+{
+    "title": "Prochains passages temps réel du réseau TCL",
+    "creator": "256900994",
+    "subject": [
+        "Réseaux de transport",
+        "Services d'utilité publique et services publics"
+    ],
+    "description": "Les prochains passages sont les horaires estimés des deux prochaines dessertes de chaque ligne commerciale pour l'ensemble des arrêts du réseau TCL. Ces horaires sont issus des calculs en temps réel des Systèmes d'Aide à l'Exploitation (Edylic). Ces horaires sont associés aux identifiants de l'offre théorique (identifiant point d'arrêt, ligne commerciale et course).",
+    "publisher": "SYTRAL",
+    "type": "nonGeographicDataset",
+    "format": [
+        "application/json",
+        "text/csv",
+        "csv (taille : 700 Ko)"
+    ],
+    "source": "Données provenant de la base géographique et topologique TCL SYTRAL.",
+    "language": "fre",
+    "relation": [
+        "https://download.data.grandlyon.com/ws/rdata/tcl_sytral.tclpassagearret/all.json",
+        "https://download.data.grandlyon.com/files/rdata/tcl_sytral.tclpassagearret/tclpassagearret.csv",
+        "https://download.data.grandlyon.com/files/grandlyon/LicenceAssociee.pdf"
+    ],
+    "coverage": "North 45.917, South 45.55, East 4.681, West 5.067. GRAND LYON",
+    "rights": [
+        "Licence Associée",
+        "Pas de restriction d'accès public selon INSPIRE"
+    ],
+    "created": "2014-12-04",
+    "dateSubmitted": "2015-01-15",
+    "isPartOf": "16a9a657-e938-484e-a067-5cdacd7a0419",
+    "accessRights": "Available by subscription",
+    "accrualPeriodicity": "continuous",
+    "modified": "2015-09-21T10:10:13",
+    "identifier": "380eaf99-b24f-4006-bcb5-3620233afebe"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://download.data.grandlyon.com:8443/catalogue/xml/schemas/dublin-core/schema.xsd">
+  <dc:title>Prochains passages temps réel du réseau TCL</dc:title>
+  <dc:creator>256900994</dc:creator>
+  <dc:subject>Réseaux de transport</dc:subject>
+  <dc:subject>Services d'utilité publique et services publics</dc:subject>
+  <dc:description>Les prochains passages sont les horaires estimés des deux prochaines dessertes de chaque ligne commerciale pour l'ensemble des arrêts du réseau TCL. Ces horaires sont issus des calculs en temps réel des Systèmes d'Aide à l'Exploitation (Edylic). Ces horaires sont associés aux identifiants de l'offre théorique (identifiant point d'arrêt, ligne commerciale et course).</dc:description>
+  <dc:publisher>SYTRAL</dc:publisher>
+  <dc:type>nonGeographicDataset</dc:type>
+  <dc:format>application/json</dc:format>
+  <dc:format>text/csv</dc:format>
+  <dc:format>csv (taille : 700 Ko)</dc:format>
+  <dc:source>Données provenant de la base géographique et topologique TCL SYTRAL.</dc:source>
+  <dc:language>fre</dc:language>
+  <dc:relation>https://download.data.grandlyon.com/ws/rdata/tcl_sytral.tclpassagearret/all.json</dc:relation>
+  <dc:relation>https://download.data.grandlyon.com/files/rdata/tcl_sytral.tclpassagearret/tclpassagearret.csv</dc:relation>
+  <dc:relation>https://download.data.grandlyon.com/files/grandlyon/LicenceAssociee.pdf</dc:relation>
+  <dc:coverage>North 45.917, South 45.55, East 4.681, West 5.067. GRAND LYON</dc:coverage>
+  <dc:rights>Licence Associée</dc:rights>
+  <dc:rights>Pas de restriction d'accès public selon INSPIRE</dc:rights>
+  <dct:created>2014-12-04</dct:created>
+  <dct:dateSubmitted>2015-01-15</dct:dateSubmitted>
+  <dct:isPartOf>16a9a657-e938-484e-a067-5cdacd7a0419</dct:isPartOf>
+  <dct:accessRights>Available by subscription</dct:accessRights>
+  <dct:accrualPeriodicity>continuous</dct:accrualPeriodicity>
+  <dct:modified>2015-09-21T10:10:13</dct:modified>
+  <dc:identifier>380eaf99-b24f-4006-bcb5-3620233afebe</dc:identifier>
+</csw:Record>

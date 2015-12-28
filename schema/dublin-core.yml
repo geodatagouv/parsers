@@ -1,0 +1,44 @@
+Record:
+    properties:
+        title:
+            type: string
+        subject:
+            array: true
+            type: string
+        description:
+            type: string
+        type:
+            type: string
+        publisher:
+            type: string
+        creator:
+            type: string
+        identifier:
+            type: string
+        relation:
+            array: true
+            type: string
+        language:
+            type: string
+        source:
+            type: string
+        format:
+            array: true
+            type: string
+        coverage:
+            type: string
+        rights:
+            array: true
+            type: string
+        accessRights:
+            type: string
+        created:
+            type: datetime
+        dateSubmitted:
+            type: datetime
+        modified:
+            type: datetime
+        accrualPeriodicity:
+            type: string
+        isPartOf:
+            type: string
