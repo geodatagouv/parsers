@@ -21,8 +21,6 @@ npm install -g inspire-parser
 
 ### CLI
 
-Or play with the CLI...
-
 ```bash
 cat metadata.xml | inspire2json
 ```
