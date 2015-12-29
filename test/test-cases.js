@@ -34,6 +34,12 @@ describe('Real test cases: GetRecordsResponse', function () {
     ].forEach(testCase => createTestCase(testCase));
 });
 
+describe('Real test cases: Capabilities', function () {
+    [
+        'csw-getcapabilities',
+    ].forEach(testCase => createTestCase(testCase));
+});
+
 describe('Real test cases: Record', function () {
     [
         'grandlyon-dc',

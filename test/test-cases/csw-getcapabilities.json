@@ -1,0 +1,28 @@
+{
+    "version": "2.0.2",
+    "serviceIdentification": {
+        "title": "GéoPicardie catalog",
+        "abstract": "GéoPicardie réalise un recensement des données mutualisées en Picardie.",
+        "keywords": [
+            "GéoPicardie",
+            "Picardie",
+            "Aisne",
+            "Oise",
+            "Somme",
+            "PICARDIE",
+            "SGAR",
+            "Unités administratives",
+            "données ouvertes",
+            "SOMME",
+            "DREAL",
+            "infoMapAccessService",
+            "REGION PICARDIE",
+            "REGION",
+            "Département de la Somme"
+        ],
+        "serviceType": "CSW",
+        "serviceTypeVersion": "2.0.2",
+        "fees": "None",
+        "accessConstraints": "None"
+    }
+}

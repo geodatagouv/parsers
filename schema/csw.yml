@@ -20,3 +20,36 @@ SearchResults:
         - MD_Metadata
         - Record
         - FC_FeatureCatalog
+
+Capabilities:
+    children:
+        ServiceIdentification:
+            renameTo: serviceIdentification
+    attributes:
+        version:
+            type: string
+
+ServiceIdentification:
+    properties:
+        Title:
+            type: string
+            renameTo: title
+        Abstract:
+            type: string
+            renameTo: abstract
+        Keyword:
+            type: string
+            array: true
+            renameTo: keywords
+        ServiceType:
+            type: string
+            renameTo: serviceType
+        ServiceTypeVersion:
+            type: string
+            renameTo: serviceTypeVersion
+        Fees:
+            type: string
+            renameTo: fees
+        AccessConstraints:
+            type: string
+            renameTo: accessConstraints
