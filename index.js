@@ -5,8 +5,8 @@ function parse(xmlString, done) {
     done = once(done);
     const parser = new Parser();
     parser.once('result', result => done(null, result));
-    parser.once('error', err => done(err));
-    parser.once('end', () => done(new Error('No result found')));
+    parser.once('error', err => done(err)); // Will never be called
+    parser.once('end', () => done());
     parser.end(xmlString);
 }
 

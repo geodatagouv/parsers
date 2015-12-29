@@ -13,10 +13,10 @@ describe('#parse()', function () {
         });
     });
 
-    it('should fail with not valid document', function (done) {
-        const str = '<>';
+    it('should pass with a valid but unknown document', function (done) {
+        const str = '<hello><hella>Hi!</hella></hello>';
         parse(str, (err) => {
-            expect(err).to.be.a(Error);
+            expect(err).to.be(undefined);
             done();
         });
     });
