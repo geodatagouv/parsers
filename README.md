@@ -42,7 +42,7 @@ const parse = require('inspire-parser').parse;
 const xmlString = fs.readFileSync(pathToXmlFile);
 
 parse(xmlString, (err, result) => {
-    console.log(JSON.stringify(result, true, 4));
+    console.log(JSON.stringify(result.body, true, 4));
 });
 ```
 
@@ -56,6 +56,6 @@ const parser = new Parser();
 const xmlStream = fs.createReadStream(pathToXmlFile);
 
 xmlStream.pipe(parser).once('result', result => {
-    console.log(JSON.stringify(result, true, 4));
+    console.log(JSON.stringify(result.body, true, 4));
 });
 ```
