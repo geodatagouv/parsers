@@ -4,13 +4,13 @@
   "description": "Powerful XML parser to deal with Inspire and OGC standarts",
   "main": "index.js",
   "bin": {
-      "inspire2json": "cli.js"
+    "inspire2json": "cli.js"
   },
   "files": [
-      "lib/",
-      "index.js",
-      "cli.js",
-      "bundled-schema.json"
+    "lib/",
+    "index.js",
+    "cli.js",
+    "bundled-schema.json"
   ],
   "scripts": {
     "test-unit": "istanbul cover _mocha",
@@ -39,7 +39,8 @@
   "homepage": "https://github.com/sgmap-inspire/parsers#readme",
   "dependencies": {
     "htmlparser2": "^3.9.0",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "readable-stream": "^2.0.5"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
