@@ -17,7 +17,7 @@
     "lint": "eslint test/**/*.js lib/**/*.js scripts/*.js *.js",
     "bundle-schema": "node scripts/bundle-schema",
     "test": "npm run lint && npm run bundle-schema && npm run test-unit",
-    "prepublish": "npm run bundle-schema",
+    "prepublish": "npm run bundle-schema && npm run dist-browser",
     "dist-browser-base": "browserify index.js -s InspireParser > dist/inspire-parser.js",
     "dist-browser-min": "browserify index.js -s InspireParser | uglifyjs > dist/inspire-parser.min.js",
     "dist-browser": "npm run dist-browser-base && npm run dist-browser-min"
