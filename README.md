@@ -36,14 +36,29 @@ npm install inspire-parser
 ### Basic
 
 ```js
-const fs = require('fs');
 const parse = require('inspire-parser').parse;
 
-const xmlString = fs.readFileSync(pathToXmlFile);
+const xmlString = `<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+  <dc:title>Prochains passages temps réel du réseau TCL</dc:title>
+  <dc:subject>Réseaux de transport</dc:subject>
+  <dc:subject>Services d'utilité publique et services publics</dc:subject>
+</csw:Record>`;
 
 parse(xmlString, (err, result) => {
-    console.log(JSON.stringify(result.body, true, 4));
+    console.log(result.type); // print parsed element type: Record
+    console.log(JSON.stringify(result.body, true, 4)); // Print parsed result below
 });
+```
+
+Result (very basic example):
+```json
+{
+    "title": "Prochains passages temps réel du réseau TCL",
+    "subject": [
+        "Réseaux de transport",
+        "Services d'utilité publique et services publics"
+    ]
+}
 ```
 
 ### Stream
@@ -56,6 +71,7 @@ const parser = new Parser();
 const xmlStream = fs.createReadStream(pathToXmlFile);
 
 xmlStream.pipe(parser).once('result', result => {
-    console.log(JSON.stringify(result.body, true, 4));
+    console.log(result.type); // print parsed element type
+    console.log(JSON.stringify(result.body, true, 4)); // Print parsed result in JSON
 });
 ```
