@@ -1,12 +1,14 @@
 {
   "name": "inspire-parser",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Powerful XML parser to deal with Inspire and OGC standarts",
   "main": "index.js",
   "bin": {
     "inspire2json": "cli.js"
   },
   "files": [
+    "dist/inspire-parser.js",
+    "dist/inspire-parser.min.js",
     "lib/",
     "index.js",
     "cli.js",
