@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://catalogue.adour-garonne.eaufrance.fr:80/catalog/xml/schemas/dublin-core/schema.xsd">
+  <dc:title>SDAGE 2010/2015</dc:title>
+  <dc:creator>Comité de Bassin- Préfet Coordonnateur de bassin</dc:creator>
+  <dc:subject>SDAGE</dc:subject>
+  <dc:subject />
+  <dc:description>Créé par la loi sur l'eau du 3 janvier 1992, le Sdage fixe pour chaque bassin hydrographique les orientations fondamentales d'une gestion équilibrée de la ressource en eau. Le nouveau Sdage intègre les obligations définies par la directive européenne sur l'eau, ainsi que les orientations de la loi du 3 août 2009 de programmation relative à la mise en oeuvre du Grenelle de l'environnement.</dc:description>
+  <dc:publisher>Agence de l'eau Adour-Garonne</dc:publisher>
+  <dc:contributor>Agence de l'eau - DREAL Midi-Pyrénées - ONEMA Délégation interrégionale  Midi-Pyrénées/Aquitaine</dc:contributor>
+  <dct:created>2009-11-16</dct:created>
+  <dc:type>document intégral</dc:type>
+  <dc:type />
+  <dc:format>Document pdf</dc:format>
+  <dct:references>http://adour-garonne.eaufrance.fr/upload/DOC/SDAGE/SDAGE_2010_2015.zip</dct:references>
+  <dc:language>fre</dc:language>
+  <dc:coverage>Bassin Adour Garonne</dc:coverage>
+  <dc:rights>Droits de propriété intellectuelle. Données publiques</dc:rights>
+  <dc:identifier>b4fc3180-eaf4-11de-8442-001517506977</dc:identifier>
+  <dc:relation>http://adour-garonne.eaufrance.fr</dc:relation>
+  <dc:coverage>North 46.3, South 42.51, East 3.88, West -1.84</dc:coverage>
+</csw:Record>

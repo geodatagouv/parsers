@@ -13,7 +13,9 @@
         "text/csv",
         "csv (taille : 700 Ko)"
     ],
-    "source": "Données provenant de la base géographique et topologique TCL SYTRAL.",
+    "source": [
+        "Données provenant de la base géographique et topologique TCL SYTRAL."
+    ],
     "language": "fre",
     "relation": [
         "https://download.data.grandlyon.com/ws/rdata/tcl_sytral.tclpassagearret/all.json",
@@ -27,7 +29,9 @@
     ],
     "created": "2014-12-04",
     "dateSubmitted": "2015-01-15",
-    "isPartOf": "16a9a657-e938-484e-a067-5cdacd7a0419",
+    "isPartOf": [
+        "16a9a657-e938-484e-a067-5cdacd7a0419"
+    ],
     "accessRights": "Available by subscription",
     "accrualPeriodicity": "continuous",
     "modified": "2015-09-21T10:10:13",

@@ -9,18 +9,19 @@ Record:
             type: string
         type:
             type: string
+
+        # Relation to Person/Organization
         publisher:
             type: string
         creator:
             type: string
+        contributor:
+            type: string
+            array: true
+
         identifier:
             type: string
-        relation:
-            array: true
-            type: string
         language:
-            type: string
-        source:
             type: string
         format:
             array: true
@@ -40,5 +41,17 @@ Record:
             type: datetime
         accrualPeriodicity:
             type: string
+
+        # Relations with other items
+        relation:
+            array: true
+            type: string
+        references:
+            array: true
+            type: string
         isPartOf:
+            array: true
+            type: string
+        source:
+            array: true
             type: string
