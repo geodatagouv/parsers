@@ -52,6 +52,33 @@ Record:
         isPartOf:
             array: true
             type: string
+        isReferencedBy:
+            array: true
+            type: string
+        isReplacedBy:
+            array: true
+            type: string
+        isRequiredBy:
+            array: true
+            type: string
+        isVersionOf:
+            array: true
+            type: string
+        conformsTo:
+            array: true
+            type: string
+        hasFormat:
+            array: true
+            type: string
+        hasPart:
+            array: true
+            type: string
+        hasVersion:
+            array: true
+            type: string
+        isFormatOf:
+            array: true
+            type: string
         source:
             array: true
             type: string
