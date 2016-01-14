@@ -34,11 +34,11 @@ Record:
         accessRights:
             type: string
         created:
-            type: datetime
+            type: date
         dateSubmitted:
-            type: datetime
+            type: date
         modified:
-            type: datetime
+            type: date
         accrualPeriodicity:
             type: string
 

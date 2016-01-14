@@ -18,7 +18,7 @@
         },
         "role": "pointOfContact"
     },
-    "dateStamp": "2015-08-04T09:45:09",
+    "dateStamp": "2015-08-04T09:45:09.000Z",
     "metadataStandardName": "ISO 19115:2003/19139",
     "metadataStandardVersion": "1.0",
     "identificationInfo": {
@@ -27,11 +27,11 @@
             "alternateTitle": "RVA",
             "date": [
                 {
-                    "date": "2013-03-01",
+                    "date": "2013-03-01T00:00:00.000Z",
                     "dateType": "creation"
                 },
                 {
-                    "date": "2015-08-02",
+                    "date": "2015-08-02T00:00:00.000Z",
                     "dateType": "revision"
                 }
             ],
@@ -84,7 +84,7 @@
                     "title": "GEMET - INSPIRE themes, version 1.0",
                     "date": [
                         {
-                            "date": "2008-06-01",
+                            "date": "2008-06-01T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -100,7 +100,7 @@
                     "title": "GEMET",
                     "date": [
                         {
-                            "date": "2009-09-22",
+                            "date": "2009-09-22T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -116,7 +116,7 @@
                     "title": "GéoBretagne v 2.0",
                     "date": [
                         {
-                            "date": "2014-01-13",
+                            "date": "2014-01-13T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -133,7 +133,7 @@
                     "title": "RM Diffusion v 1.1",
                     "date": [
                         {
-                            "date": "2014-02-12",
+                            "date": "2014-02-12T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -149,7 +149,7 @@
                     "title": "RM Services v 1.1",
                     "date": [
                         {
-                            "date": "2014-02-12",
+                            "date": "2014-02-12T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],

@@ -26,7 +26,7 @@
         },
         "role": "pointOfContact"
     },
-    "dateStamp": "2015-12-21",
+    "dateStamp": "2015-12-21T00:00:00.000Z",
     "metadataStandardName": "ISO 19119/2005",
     "metadataStandardVersion": "1.0",
     "identificationInfo": {
@@ -34,7 +34,7 @@
             "title": "Service de téléchargement direct (WFS) du CRCBS",
             "date": [
                 {
-                    "date": "2015-12-21",
+                    "date": "2015-12-21T00:00:00.000Z",
                     "dateType": "revision"
                 }
             ]
@@ -73,7 +73,7 @@
                     "title": "INSPIRE Service taxonomy",
                     "date": [
                         {
-                            "date": "2008-12-03",
+                            "date": "2008-12-03T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ]
@@ -92,10 +92,10 @@
         "extent": [
             {
                 "geographicElement": {
-                    "westBoundLongitude": "-4.59130336259",
-                    "eastBoundLongitude": "-2.39603299035",
-                    "southBoundLatitude": "47.1821623883",
-                    "northBoundLatitude": "48.4006141523"
+                    "westBoundLongitude": -4.59130336259,
+                    "eastBoundLongitude": -2.39603299035,
+                    "southBoundLatitude": 47.1821623883,
+                    "northBoundLatitude": 48.4006141523
                 }
             }
         ],

@@ -12,7 +12,7 @@
         },
         "role": "pointOfContact"
     },
-    "dateStamp": "2015-03-18T18:00:50",
+    "dateStamp": "2015-03-18T18:00:50.000Z",
     "metadataStandardName": "ISO 19115:2003/19139 - SEXTANT",
     "metadataStandardVersion": "1.0",
     "identificationInfo": {
@@ -20,7 +20,7 @@
             "title": "EUROSHELL - Sites de production conchylicole",
             "date": [
                 {
-                    "date": "2013-01-18T00:00:00",
+                    "date": "2013-01-18T00:00:00.000Z",
                     "dateType": "creation"
                 }
             ],
@@ -65,7 +65,7 @@
                     "title": "Thèmes Sextant",
                     "date": [
                         {
-                            "date": "2015-02-05T10:26:52",
+                            "date": "2015-02-05T10:26:52.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -89,7 +89,7 @@
                     "title": "GEMET - INSPIRE themes, version 1.0",
                     "date": [
                         {
-                            "date": "2009-09-22",
+                            "date": "2009-09-22T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -110,10 +110,10 @@
         "extent": [
             {
                 "geographicElement": {
-                    "westBoundLongitude": "-4.89633",
-                    "eastBoundLongitude": "9.53679",
-                    "southBoundLatitude": "41.58419",
-                    "northBoundLatitude": "51.005547"
+                    "westBoundLongitude": -4.89633,
+                    "eastBoundLongitude": 9.53679,
+                    "southBoundLatitude": 41.58419,
+                    "northBoundLatitude": 51.005547
                 }
             }
         ]

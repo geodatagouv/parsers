@@ -205,7 +205,7 @@ MD_Resolution:
 MD_RepresentativeFraction:
     properties:
         denominator:
-            type: string
+            type: integer
 
 DQ_DataQuality:
     properties:

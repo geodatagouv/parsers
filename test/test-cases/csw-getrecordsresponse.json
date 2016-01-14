@@ -1,9 +1,9 @@
 {
     "searchResults": {
-        "numberOfRecordsMatched": "965",
-        "numberOfRecordsReturned": "10",
+        "numberOfRecordsMatched": 965,
+        "numberOfRecordsReturned": 10,
         "elementSet": "full",
-        "nextRecord": "11",
+        "nextRecord": 11,
         "children": [
             {
                 "@elementType": "MD_Metadata",

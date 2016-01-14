@@ -12,7 +12,7 @@
         },
         "role": "pointOfContact"
     },
-    "dateStamp": "2015-06-19T16:39:42",
+    "dateStamp": "2015-06-19T16:39:42.000Z",
     "metadataStandardName": "ISO 19115:2003/19139",
     "metadataStandardVersion": "1.0",
     "identificationInfo": {
@@ -20,7 +20,7 @@
             "title": "Tâche urbaine - Oise-la-Vallée (1947)",
             "date": [
                 {
-                    "date": "2011-06-01",
+                    "date": "2011-06-01T00:00:00.000Z",
                     "dateType": "creation"
                 }
             ]
@@ -54,7 +54,7 @@
                 "thesaurusName": {
                     "date": [
                         {
-                            "date": "2013-03-11",
+                            "date": "2013-03-11T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -71,7 +71,7 @@
                 "thesaurusName": {
                     "date": [
                         {
-                            "date": "2010-01-13",
+                            "date": "2010-01-13T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -87,7 +87,7 @@
                 "thesaurusName": {
                     "date": [
                         {
-                            "date": "2008-06-01",
+                            "date": "2008-06-01T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
@@ -101,7 +101,7 @@
         "characterSet": "8859part1",
         "spatialResolution": {
             "equivalentScale": {
-                "denominator": "5000"
+                "denominator": 5000
             }
         },
         "topicCategory": "imageryBaseMapsEarthCover",
@@ -109,73 +109,73 @@
             {
                 "description": "CC des Pays d'Oise et d'Halatte",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.7161891493348334",
-                    "northBoundLatitude": "49.39528872551829",
-                    "southBoundLatitude": "49.2426356903796",
-                    "westBoundLongitude": "2.48302188904224"
+                    "eastBoundLongitude": 2.7161891493348334,
+                    "northBoundLatitude": 49.39528872551829,
+                    "southBoundLatitude": 49.2426356903796,
+                    "westBoundLongitude": 2.48302188904224
                 }
             },
             {
                 "description": "CC des Trois Forêts",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.655732054287982",
-                    "northBoundLatitude": "49.27950123379009",
-                    "southBoundLatitude": "49.1753122065756",
-                    "westBoundLongitude": "2.5244509624880678"
+                    "eastBoundLongitude": 2.655732054287982,
+                    "northBoundLatitude": 49.27950123379009,
+                    "southBoundLatitude": 49.1753122065756,
+                    "westBoundLongitude": 2.5244509624880678
                 }
             },
             {
                 "description": "CC du Liancourtois",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.5334661147872968",
-                    "northBoundLatitude": "49.36223005164863",
-                    "southBoundLatitude": "49.28192034844968",
-                    "westBoundLongitude": "2.396762036959161"
+                    "eastBoundLongitude": 2.5334661147872968,
+                    "northBoundLatitude": 49.36223005164863,
+                    "southBoundLatitude": 49.28192034844968,
+                    "westBoundLongitude": 2.396762036959161
                 }
             },
             {
                 "description": "CA Creilloise",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.5129313952499537",
-                    "northBoundLatitude": "49.30275345953062",
-                    "southBoundLatitude": "49.23685825986413",
-                    "westBoundLongitude": "2.4019487246742974"
+                    "eastBoundLongitude": 2.5129313952499537,
+                    "northBoundLatitude": 49.30275345953062,
+                    "southBoundLatitude": 49.23685825986413,
+                    "westBoundLongitude": 2.4019487246742974
                 }
             },
             {
                 "description": "CA de la Région de Compiègne",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.970309911400828",
-                    "northBoundLatitude": "49.461275131981594",
-                    "southBoundLatitude": "49.308062952667235",
-                    "westBoundLongitude": "2.71624316357964"
+                    "eastBoundLongitude": 2.970309911400828,
+                    "northBoundLatitude": 49.461275131981594,
+                    "southBoundLatitude": 49.308062952667235,
+                    "westBoundLongitude": 2.71624316357964
                 }
             },
             {
                 "description": "CC Pierre - Sud - Oise",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.4871059459167637",
-                    "northBoundLatitude": "49.30941802472581",
-                    "southBoundLatitude": "49.202662175076306",
-                    "westBoundLongitude": "2.3525868060722352"
+                    "eastBoundLongitude": 2.4871059459167637,
+                    "northBoundLatitude": 49.30941802472581,
+                    "southBoundLatitude": 49.202662175076306,
+                    "westBoundLongitude": 2.3525868060722352
                 }
             },
             {
                 "description": "CC de la Basse Automne",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.838215776478177",
-                    "northBoundLatitude": "49.34365283878711",
-                    "southBoundLatitude": "49.24583337036559",
-                    "westBoundLongitude": "2.704325920282371"
+                    "eastBoundLongitude": 2.838215776478177,
+                    "northBoundLatitude": 49.34365283878711,
+                    "southBoundLatitude": 49.24583337036559,
+                    "westBoundLongitude": 2.704325920282371
                 }
             },
             {
                 "description": "CC de la Plaine d'Estrées",
                 "geographicElement": {
-                    "eastBoundLongitude": "2.758099339847574",
-                    "northBoundLatitude": "49.488305975299824",
-                    "southBoundLatitude": "49.31187011715845",
-                    "westBoundLongitude": "2.5322820734773956"
+                    "eastBoundLongitude": 2.758099339847574,
+                    "northBoundLatitude": 49.488305975299824,
+                    "southBoundLatitude": 49.31187011715845,
+                    "westBoundLongitude": 2.5322820734773956
                 }
             }
         ]

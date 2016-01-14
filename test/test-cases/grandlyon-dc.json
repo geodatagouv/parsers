@@ -27,13 +27,13 @@
         "Licence Associée",
         "Pas de restriction d'accès public selon INSPIRE"
     ],
-    "created": "2014-12-04",
-    "dateSubmitted": "2015-01-15",
+    "created": "2014-12-04T00:00:00.000Z",
+    "dateSubmitted": "2015-01-15T00:00:00.000Z",
     "isPartOf": [
         "16a9a657-e938-484e-a067-5cdacd7a0419"
     ],
     "accessRights": "Available by subscription",
     "accrualPeriodicity": "continuous",
-    "modified": "2015-09-21T10:10:13",
+    "modified": "2015-09-21T10:10:13.000Z",
     "identifier": "380eaf99-b24f-4006-bcb5-3620233afebe"
 }

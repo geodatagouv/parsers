@@ -15,7 +15,7 @@
         },
         "role": "pointOfContact"
     },
-    "dateStamp": "2015-08-17T16:16:42",
+    "dateStamp": "2015-08-17T16:16:42.000Z",
     "metadataStandardName": "ISO 19115:2003/19139",
     "metadataStandardVersion": "1.0",
     "identificationInfo": {
@@ -23,7 +23,7 @@
             "title": "Lignes de tramway - Montpellier Méditerranée Métropole",
             "date": [
                 {
-                    "date": "2012-04-01",
+                    "date": "2012-04-01T00:00:00.000Z",
                     "dateType": "publication"
                 }
             ],
@@ -66,7 +66,7 @@
                     "title": "GEMET - INSPIRE themes, version 1.0",
                     "date": [
                         {
-                            "date": "2008-06-01",
+                            "date": "2008-06-01T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ]
@@ -109,7 +109,7 @@
         "spatialRepresentationType": "vector",
         "spatialResolution": {
             "equivalentScale": {
-                "denominator": "25000"
+                "denominator": 25000
             }
         },
         "language": "fre",
@@ -118,10 +118,10 @@
         "extent": [
             {
                 "geographicElement": {
-                    "westBoundLongitude": "3.6",
-                    "eastBoundLongitude": "4.4437",
-                    "southBoundLatitude": "43.4179",
-                    "northBoundLatitude": "43.9383"
+                    "westBoundLongitude": 3.6,
+                    "eastBoundLongitude": 4.4437,
+                    "southBoundLatitude": 43.4179,
+                    "northBoundLatitude": 43.9383
                 }
             }
         ]

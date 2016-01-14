@@ -12,7 +12,7 @@ function createTestCase(name) {
         const xml = fs.createReadStream(__dirname + '/test-cases/' + name + '.xml');
         const expectedResult = require('./test-cases/' + name + '.json');
         xml.pipe(parser).once('result', result => {
-            expect(result.body).to.eql(expectedResult);
+            expect(JSON.parse(JSON.stringify(result.body))).to.eql(expectedResult);
             done();
         });
     });

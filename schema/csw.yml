@@ -8,13 +8,13 @@ SearchResults:
     type: object
     attributes:
         numberOfRecordsMatched:
-            type: string
+            type: integer
         numberOfRecordsReturned:
-            type: string
+            type: integer
         elementSet:
             type: string
         nextRecord:
-            type: string
+            type: integer
     container: true
     acceptedChildren:
         - MD_Metadata
