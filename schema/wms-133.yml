@@ -1,0 +1,27 @@
+WMS_Capabilities:
+    renameTo: Capabilities
+    children:
+        Service:
+            renameTo: serviceIdentification
+    attributes:
+        version:
+            type: string
+
+Service:
+    properties:
+        Title:
+            type: string
+            renameTo: title
+        Abstract:
+            type: string
+            renameTo: abstract
+        Keyword:
+            type: string
+            array: true
+            renameTo: keywords
+        Fees:
+            type: string
+            renameTo: fees
+        AccessConstraints:
+            type: string
+            renameTo: accessConstraints
