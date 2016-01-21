@@ -2,7 +2,7 @@ WMS_Capabilities:
     renameTo: Capabilities
     children:
         Service:
-            renameTo: serviceIdentification
+            renameTo: service
     attributes:
         version:
             type: string
@@ -19,9 +19,31 @@ Service:
             type: string
             array: true
             renameTo: keywords
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
+        ContactInformation:
+            accept: ContactPersonPrimary
+            renameTo: contact
         Fees:
             type: string
             renameTo: fees
         AccessConstraints:
             type: string
             renameTo: accessConstraints
+
+OnlineResource:
+    type: string
+    from: attributes
+    attribute: xlink:href
+
+ContactPersonPrimary:
+    properties:
+        ContactPerson:
+            type: string
+            renameTo: person
+        ContactOrganization:
+            type: string
+            renameTo: organization
