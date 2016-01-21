@@ -24,20 +24,40 @@ Service:
             from: attributes
             attribute: xlink:href
             renameTo: onlineResource
-        ContactInformation:
-            accept: ContactPersonPrimary
-            renameTo: contact
         Fees:
             type: string
             renameTo: fees
         AccessConstraints:
             type: string
             renameTo: accessConstraints
+    children:
+        ContactInformation:
+            renameTo: contact
 
 OnlineResource:
     type: string
     from: attributes
     attribute: xlink:href
+
+ContactInformation:
+    properties:
+        ContactPosition:
+            type: string
+            renameTo: position
+        ContactVoiceTelephone:
+            type: string
+            renameTo: voiceTelephone
+        ContactFacsimileTelephone:
+            type: string
+            renameTo: facsimileTelephone
+        ContactElectronicMailAddress:
+            type: string
+            renameTo: electronicMailAddress
+    children:
+        ContactPersonPrimary:
+            renameTo: personPrimary
+        ContactAddress:
+            accept: address
 
 ContactPersonPrimary:
     properties:
@@ -47,3 +67,24 @@ ContactPersonPrimary:
         ContactOrganization:
             type: string
             renameTo: organization
+
+ContactAddress:
+    properties:
+        AddressType:
+            type: string
+            renameTo: addressType
+        Address:
+            type: string
+            renameTo: address
+        City:
+            type: string
+            renameTo: city
+        StateOrProvince:
+            type: string
+            renameTo: stateOrProvince
+        PostCode:
+            type: string
+            renameTo: postCode
+        Country:
+            type: string
+            renameTo: country
