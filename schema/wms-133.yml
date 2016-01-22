@@ -127,6 +127,10 @@ Layer:
             type: string
             renameTo: abstract
     children:
+        MetadataURL:
+            type: object
+            array: true
+            renameTo: metadataUrls
         Style:
             type: object
             array: true
@@ -135,6 +139,20 @@ Layer:
             accept: Layer
             array: true
             renameTo: layers
+
+MetadataURL:
+    attributes:
+        type:
+            type: string
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
 
 Style:
     properties:
