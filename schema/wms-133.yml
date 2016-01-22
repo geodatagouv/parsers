@@ -38,11 +38,82 @@ Service:
 
 Capability:
     children:
+        Request:
+            type: object
+            array: true
+            renameTo: requests
         Layer:
             type: object
             array: true
             # accept: Layer
             renameTo: layers
+
+Request:
+    children:
+        GetCapabilities:
+            type: object
+        GetMap:
+            type: object
+        GetFeatureInfo:
+            type: object
+
+GetCapabilities:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+GetMap:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+GetFeatureInfo:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+Get:
+    properties:
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
+
+Post:
+    properties:
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
 
 Layer:
     properties:
