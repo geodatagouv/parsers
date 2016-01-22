@@ -165,6 +165,26 @@ Style:
         Abstract:
             type: string
             renameTo: abstract
+    children:
+        LegendURL:
+            type: object
+            renameTo: LegendURL
+
+LegendURL:
+    attributes:
+        width:
+            type: string
+        height:
+            type: string
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
 
 OnlineResource:
     type: string
