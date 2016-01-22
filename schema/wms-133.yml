@@ -3,6 +3,8 @@ WMS_Capabilities:
     children:
         Service:
             renameTo: service
+        Capability:
+            renameTo: capability
     attributes:
         version:
             type: string
@@ -33,6 +35,47 @@ Service:
     children:
         ContactInformation:
             renameTo: contact
+
+Capability:
+    children:
+        Layer:
+            type: object
+            array: true
+            # accept: Layer
+            renameTo: layers
+
+Layer:
+    properties:
+        Name:
+            type: string
+            renameTo: name
+        Title:
+            type: string
+            renameTo: title
+        Abstract:
+            type: string
+            renameTo: abstract
+    children:
+        Style:
+            type: object
+            array: true
+            renameTo: styles
+        Layer:
+            accept: Layer
+            array: true
+            renameTo: layers
+
+Style:
+    properties:
+        Name:
+            type: string
+            renameTo: name
+        Title:
+            type: string
+            renameTo: title
+        Abstract:
+            type: string
+            renameTo: abstract
 
 OnlineResource:
     type: string
