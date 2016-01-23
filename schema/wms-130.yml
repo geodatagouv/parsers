@@ -127,6 +127,19 @@ Post:
             renameTo: onlineResource
 
 Layer:
+    attributes:
+        queryable:
+            type: string
+        cascaded:
+            type: string
+        opaque:
+            type: string
+        noSubsets:
+            type: string
+        fixedWidth:
+            type: string
+        fixedHeight:
+            type: string
     properties:
         Name:
             type: string
