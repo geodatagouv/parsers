@@ -150,6 +150,10 @@ Layer:
         Abstract:
             type: string
             renameTo: abstract
+        CRS:
+            type: string
+            array: true
+            renameTo: crs
     children:
         MetadataURL:
             type: object
