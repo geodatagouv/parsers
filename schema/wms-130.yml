@@ -168,6 +168,7 @@ Style:
     children:
         LegendURL:
             type: object
+            array: true
             renameTo: LegendURL
 
 LegendURL:
