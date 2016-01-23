@@ -34,6 +34,15 @@ Service:
         AccessConstraints:
             type: string
             renameTo: accessConstraints
+        LayerLimit:
+            type: string
+            renameTo: layerLimit
+        MaxWidth:
+            type: string
+            renameTo: maxWidth
+        MaxHeight:
+            type: string
+            renameTo: maxHeight
     children:
         ContactInformation:
             renameTo: contact
