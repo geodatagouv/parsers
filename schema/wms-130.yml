@@ -159,6 +159,13 @@ Layer:
             type: object
             array : true
             renameTo: dimensions
+        Attribution:
+            type: object
+            renameTo: attribution
+        AuthorityURL:
+            type: object
+            array: true
+            renameTo: authorityUrls
         MetadataURL:
             type: object
             array: true
@@ -188,6 +195,45 @@ Dimension:
             type: string
         current:
             type: string
+
+Attribution:
+    properties:
+        Title:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
+    children:
+        LogoURL:
+            type: object
+            renameTo: logoUrl
+
+LogoURL:
+    attributes:
+        width:
+            type: string
+        height:
+            type: string
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
+
+AuthorityURL:
+    properties:
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: onlineResource
 
 MetadataURL:
     attributes:
