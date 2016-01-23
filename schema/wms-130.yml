@@ -155,6 +155,10 @@ Layer:
             array: true
             renameTo: crs
     children:
+        Dimension:
+            type: object
+            array : true
+            renameTo: dimensions
         MetadataURL:
             type: object
             array: true
@@ -167,6 +171,23 @@ Layer:
             accept: Layer
             array: true
             renameTo: layers
+
+Dimension:
+    attributes:
+        name:
+            type: string
+        units:
+            type: string
+        unitSymbol:
+            type: string
+        default:
+            type: string
+        multipleValues:
+            type: string
+        nearestValue:
+            type: string
+        current:
+            type: string
 
 MetadataURL:
     attributes:
