@@ -8,6 +8,8 @@ WMS_Capabilities:
     attributes:
         version:
             type: string
+        updateSequence:
+            type: string
 
 Service:
     properties:
