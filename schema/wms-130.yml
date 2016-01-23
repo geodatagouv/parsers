@@ -154,6 +154,11 @@ Layer:
             type: string
             array: true
             renameTo: crs
+        AuthorityURL:
+            type: object
+            array: true
+            accept: OnlineResource
+            renameTo: authorityUrls
     children:
         Dimension:
             type: object
@@ -162,10 +167,10 @@ Layer:
         Attribution:
             type: object
             renameTo: attribution
-        AuthorityURL:
+        Identifier:
             type: object
             array: true
-            renameTo: authorityUrls
+            renameTo: identifiers
         MetadataURL:
             type: object
             array: true
@@ -211,6 +216,10 @@ Attribution:
             type: object
             renameTo: logoUrl
 
+Identifier:
+    type: string
+    from: text
+
 LogoURL:
     attributes:
         width:
@@ -234,6 +243,16 @@ AuthorityURL:
             from: attributes
             attribute: xlink:href
             renameTo: onlineResource
+
+# Identifier:
+#     attributes:
+#         authority:
+#             type: string
+#     # properties:
+#         Id:
+#             type: string
+#             # from: text
+#             fallbackText: true
 
 MetadataURL:
     attributes:
@@ -310,11 +329,6 @@ StyleURL:
             attribute: xlink:href
             renameTo: onlineResource
 
-OnlineResource:
-    type: string
-    from: attributes
-    attribute: xlink:href
-
 ContactInformation:
     properties:
         ContactPosition:
@@ -364,3 +378,8 @@ ContactAddress:
         Country:
             type: string
             renameTo: country
+
+OnlineResource:
+    type: string
+    from: attributes
+    attribute: xlink:href
