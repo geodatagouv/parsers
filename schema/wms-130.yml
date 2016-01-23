@@ -27,7 +27,7 @@ Service:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
         Fees:
             type: string
             renameTo: fees
@@ -116,7 +116,7 @@ Get:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
 
 Post:
     properties:
@@ -124,7 +124,7 @@ Post:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
 
 Layer:
     attributes:
@@ -175,6 +175,14 @@ Layer:
             type: object
             array: true
             renameTo: metadataUrls
+        DataURL:
+            type: object
+            array: true
+            renameTo: dataUrls
+        FeatureListURL:
+            type: object
+            array: true
+            renameTo: featureListUrls
         Style:
             type: object
             array: true
@@ -210,7 +218,7 @@ Attribution:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
     children:
         LogoURL:
             type: object
@@ -234,7 +242,7 @@ LogoURL:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
 
 AuthorityURL:
     properties:
@@ -242,17 +250,7 @@ AuthorityURL:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
-
-# Identifier:
-#     attributes:
-#         authority:
-#             type: string
-#     # properties:
-#         Id:
-#             type: string
-#             # from: text
-#             fallbackText: true
+            renameTo: url
 
 MetadataURL:
     attributes:
@@ -266,7 +264,29 @@ MetadataURL:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
+
+DataURL:
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+FeatureListURL:
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
 
 Style:
     properties:
@@ -305,7 +325,7 @@ LegendURL:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
 
 StyleSheetURL:
     properties:
@@ -316,7 +336,7 @@ StyleSheetURL:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
 
 StyleURL:
     properties:
@@ -327,7 +347,7 @@ StyleURL:
             type: string
             from: attributes
             attribute: xlink:href
-            renameTo: onlineResource
+            renameTo: url
 
 ContactInformation:
     properties:
@@ -383,3 +403,4 @@ OnlineResource:
     type: string
     from: attributes
     attribute: xlink:href
+    renameTo: url
