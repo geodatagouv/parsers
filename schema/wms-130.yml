@@ -35,13 +35,16 @@ Service:
             type: string
             renameTo: accessConstraints
         LayerLimit:
-            type: string
+            type: number
+            format: integer
             renameTo: layerLimit
         MaxWidth:
-            type: string
+            type: number
+            format: integer
             renameTo: maxWidth
         MaxHeight:
-            type: string
+            type: number
+            format: integer
             renameTo: maxHeight
     children:
         ContactInformation:
@@ -129,17 +132,20 @@ Post:
 Layer:
     attributes:
         queryable:
-            type: string
+            type: boolean
         cascaded:
-            type: string
+            type: number
+            format: integer
         opaque:
-            type: string
+            type: boolean
         noSubsets:
-            type: string
+            type: boolean
         fixedWidth:
-            type: string
+            type: number
+            format: float
         fixedHeight:
-            type: string
+            type: number
+            format: float
     properties:
         Name:
             type: string
@@ -239,9 +245,11 @@ Identifier:
 LogoURL:
     attributes:
         width:
-            type: string
+            type: number
+            format: integer
         height:
-            type: string
+            type: number
+            format: integer
     properties:
         Format:
             type: string
