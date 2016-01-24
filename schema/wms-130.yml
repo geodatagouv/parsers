@@ -159,6 +159,14 @@ Layer:
             array: true
             accept: OnlineResource
             renameTo: authorityUrls
+        MinScaleDenominator:
+            type: number
+            format: float
+            renameTo: minScaleDenominator
+        MaxScaleDenominator:
+            type: number
+            format: float
+            renameTo: maxScaleDenominator
     children:
         Dimension:
             type: object
