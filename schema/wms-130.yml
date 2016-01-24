@@ -59,7 +59,6 @@ Capability:
         Layer:
             type: object
             array: true
-            # accept: Layer
             renameTo: layers
 
 Request:
