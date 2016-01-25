@@ -170,6 +170,10 @@ Layer:
         Abstract:
             type: string
             renameTo: abstract
+        Keyword:
+            type: string
+            array: true
+            renameTo: keywords
         CRS:
             type: string
             array: true
@@ -250,6 +254,7 @@ BoundingBox:
     attributes:
         CRS:
             type: string
+            renameTo: crs
         minx:
             type: number
             format: float
