@@ -69,6 +69,8 @@ Request:
             type: object
         GetFeatureInfo:
             type: object
+        DescribeLayer:
+            type: object
 
 GetCapabilities:
     properties:
@@ -99,6 +101,20 @@ GetMap:
             renameTo: postRequest
 
 GetFeatureInfo:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+DescribeLayer:
     properties:
         Format:
             array: true
