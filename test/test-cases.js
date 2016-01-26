@@ -34,9 +34,16 @@ describe('Real test cases: GetRecordsResponse', function () {
     ].forEach(testCase => createTestCase(testCase));
 });
 
-describe('Real test cases: Capabilities', function () {
+describe('Real test cases: CSW Capabilities', function () {
     [
         'csw-getcapabilities',
+    ].forEach(testCase => createTestCase(testCase));
+});
+
+describe('Real test cases: WMS Capabilities', function () {
+    [
+        'wms-111-getcapabilities',
+        'wms-130-getcapabilities',
     ].forEach(testCase => createTestCase(testCase));
 });
 
