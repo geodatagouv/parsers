@@ -166,7 +166,7 @@ SV_CoupledResource:
             fallbackText: true
         operationName:
             accept: CharacterString
-            fallback: true
+            fallbackText: true
         ScopedName:
             type: string
             renameTo: scopedName
