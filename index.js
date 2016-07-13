@@ -1,5 +1,5 @@
 const Parser = require('./lib/parser');
-const once = require('lodash/function/once');
+const once = require('once');
 
 function parse(xmlString, done) {
     done = once(done);
