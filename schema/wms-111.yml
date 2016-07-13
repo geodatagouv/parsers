@@ -1,0 +1,554 @@
+# Things to be fixed :
+#  - extent of dimensions
+#  - scaleHint
+
+WMT_MS_Capabilities:
+    renameTo: Capabilities
+    children:
+        Service:
+            renameTo: service
+        Capability:
+            renameTo: capability
+    attributes:
+        version:
+            type: string
+        updateSequence:
+            type: string
+
+Service:
+    properties:
+        Title:
+            type: string
+            renameTo: title
+        Abstract:
+            type: string
+            renameTo: abstract
+        Keyword:
+            type: string
+            array: true
+            renameTo: keywords
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+        Fees:
+            type: string
+            renameTo: fees
+        AccessConstraints:
+            type: string
+            renameTo: accessConstraints
+    children:
+        ContactInformation:
+            renameTo: contact
+
+Capability:
+    children:
+        Request:
+            type: object
+            array: true
+            renameTo: requests
+        UserDefinedSymbolization:
+            type: object
+            renameTo: userDefinedSymbolization
+        Layer:
+            type: object
+            renameTo: layer
+
+Request:
+    children:
+        GetCapabilities:
+            type: object
+        GetMap:
+            type: object
+        GetFeatureInfo:
+            type: object
+        DescribeLayer:
+            type: object
+        GetLegendGraphic:
+            type: object
+        GetStyles:
+            type: object
+        PutStyles:
+            type: object
+
+GetCapabilities:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+GetMap:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+GetFeatureInfo:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+DescribeLayer:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+GetLegendGraphic:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+GetStyles:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+PutStyles:
+    properties:
+        Format:
+            array: true
+            type: string
+            renameTo: formats
+    children:
+        Get:
+            type: object
+            renameTo: getRequest
+        Post:
+            type: object
+            renameTo: postRequest
+
+Get:
+    properties:
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+Post:
+    properties:
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+UserDefinedSymbolization:
+    attributes:
+        SupportSLD:
+            type: boolean
+            renameTo: supportSLD
+        UserLayer:
+            type: boolean
+            renameTo: userLayer
+        UserStyle:
+            type: boolean
+            renameTo: userStyle
+        RemoteWFS:
+            type: boolean
+            renameTo: remoteWfs
+
+Layer:
+    attributes:
+        queryable:
+            type: boolean
+        cascaded:
+            type: number
+            format: integer
+        opaque:
+            type: boolean
+        noSubsets:
+            type: boolean
+        fixedWidth:
+            type: number
+            format: float
+        fixedHeight:
+            type: number
+            format: float
+    properties:
+        Name:
+            type: string
+            renameTo: name
+        Title:
+            type: string
+            renameTo: title
+        Abstract:
+            type: string
+            renameTo: abstract
+        Keyword:
+            type: string
+            array: true
+            renameTo: keywords
+        SRS:
+            type: string
+            array: true
+            renameTo: crs
+        AuthorityURL:
+            type: object
+            array: true
+            accept: OnlineResource
+            renameTo: authorityUrls
+# Extent ?
+# ScaleHint ?
+        # MinScaleDenominator:
+        #     type: number
+        #     format: float
+        #     renameTo: minScaleDenominator
+        # MaxScaleDenominator:
+        #     type: number
+        #     format: float
+        #     renameTo: maxScaleDenominator
+    children:
+        LatLonBoundingBox:
+            type: object
+            renameTo: geographicBoundingBox
+        BoundingBox:
+            type: object
+            array: true
+            renameTo: boundingBoxes
+        Dimension:
+            type: object
+            array : true
+            renameTo: dimensions
+        Attribution:
+            type: object
+            renameTo: attribution
+        Identifier:
+            type: object
+            array: true
+            renameTo: identifiers
+        MetadataURL:
+            type: object
+            array: true
+            renameTo: metadataUrls
+        DataURL:
+            type: object
+            array: true
+            renameTo: dataUrls
+        FeatureListURL:
+            type: object
+            array: true
+            renameTo: featureListUrls
+        Style:
+            type: object
+            array: true
+            renameTo: styles
+        Layer:
+            accept: Layer
+            array: true
+            renameTo: layers
+
+LatLonBoundingBox:
+    attributes:
+        minx:
+            type: number
+            format: float
+            renameTo: west
+        maxx:
+            type: number
+            format: float
+            renameTo: east
+        miny:
+            type: number
+            format: float
+            renameTo: south
+        maxy:
+            type: number
+            format: float
+            renameTo: north
+
+BoundingBox:
+    attributes:
+        SRS:
+            type: string
+            renameTo: crs
+        minx:
+            type: number
+            format: float
+        miny:
+            type: number
+            format: float
+        maxx:
+            type: number
+            format: float
+        maxy:
+            type: number
+            format: float
+        resx:
+            type: number
+            format: float
+        resy:
+            type: number
+            format: float
+
+Dimension:
+    attributes:
+        name:
+            type: string
+        units:
+            type: string
+        unitSymbol:
+            type: string
+# Extent ?
+        # default:
+        #     type: string
+        # multipleValues:
+        #     type: string
+        # nearestValue:
+        #     type: string
+        # current:
+        #     type: string
+
+Attribution:
+    properties:
+        Title:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+    children:
+        LogoURL:
+            type: object
+            renameTo: logoUrl
+
+Identifier:
+    type: string
+    from: text
+
+LogoURL:
+    attributes:
+        width:
+            type: number
+            format: integer
+        height:
+            type: number
+            format: integer
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+AuthorityURL:
+    attributes:
+        name:
+            type: string
+    properties:
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+MetadataURL:
+    attributes:
+        type:
+            type: string
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+DataURL:
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+FeatureListURL:
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+Style:
+    properties:
+        Name:
+            type: string
+            renameTo: name
+        Title:
+            type: string
+            renameTo: title
+        Abstract:
+            type: string
+            renameTo: abstract
+    children:
+        LegendURL:
+            type: object
+            array: true
+            renameTo: legendUrls
+        StyleSheetURL:
+            type: object
+            renameTo: styleSheetUrl
+        StyleURL:
+            type: object
+            renameTo: styleURL
+
+LegendURL:
+    attributes:
+        width:
+            type: string
+        height:
+            type: string
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+StyleSheetURL:
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+StyleURL:
+    properties:
+        Format:
+            type: string
+            renameTo: format
+        OnlineResource:
+            type: string
+            from: attributes
+            attribute: xlink:href
+            renameTo: url
+
+ContactInformation:
+    properties:
+        ContactPosition:
+            type: string
+            renameTo: position
+        ContactVoiceTelephone:
+            type: string
+            renameTo: voiceTelephone
+        ContactFacsimileTelephone:
+            type: string
+            renameTo: facsimileTelephone
+        ContactElectronicMailAddress:
+            type: string
+            renameTo: electronicMailAddress
+    children:
+        ContactPersonPrimary:
+            renameTo: personPrimary
+        ContactAddress:
+            accept: address
+
+ContactPersonPrimary:
+    properties:
+        ContactPerson:
+            type: string
+            renameTo: person
+        ContactOrganization:
+            type: string
+            renameTo: organization
+
+ContactAddress:
+    properties:
+        AddressType:
+            type: string
+            renameTo: addressType
+        Address:
+            type: string
+            renameTo: address
+        City:
+            type: string
+            renameTo: city
+        StateOrProvince:
+            type: string
+            renameTo: stateOrProvince
+        PostCode:
+            type: string
+            renameTo: postCode
+        Country:
+            type: string
+            renameTo: country
+
+OnlineResource:
+    type: string
+    from: attributes
+    attribute: xlink:href
+    renameTo: url

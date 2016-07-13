@@ -9,6 +9,8 @@ const definition = {};
     'md-metadata',
     'csw',
     'dublin-core',
+    'wms-130',
+    'wms-111',
 ].forEach(schemaName => {
     Object.assign(definition, jsYaml.safeLoad(fs.readFileSync(__dirname + `/../schema/${schemaName}.yml`)));
 });
