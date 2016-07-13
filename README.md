@@ -8,7 +8,7 @@ Powerful XML parser to deal with Inspire and OGC standards
 
 ## Prerequisite
 
-* [Node.js](https://nodejs.org) >= 4.0
+* [Node.js](https://nodejs.org) >= 6.0
 * OR [Babel](https://babeljs.io/) for older Node.js versions + browser
 
 ## Usage (CLI)
