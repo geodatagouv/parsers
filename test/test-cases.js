@@ -28,6 +28,12 @@ describe('Real test cases: MD_Metadata', function () {
     ].forEach(testCase => createTestCase(testCase));
 });
 
+describe('Real test cases: FC_FeatureCatalogue', function () {
+    [
+        'geobretagne-featurecatalogue',
+    ].forEach(testCase => createTestCase(testCase));
+});
+
 describe('Real test cases: GetRecordsResponse', function () {
     [
         'csw-getrecordsresponse',

@@ -19,7 +19,7 @@ SearchResults:
     acceptedChildren:
         - MD_Metadata
         - Record
-        - FC_FeatureCatalog
+        - FC_FeatureCatalogue
 
 Capabilities:
     children:

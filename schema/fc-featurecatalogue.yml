@@ -1,0 +1,5 @@
+FC_FeatureCatalogue:
+  properties:
+    name:
+      accept: CharacterString
+      fallbackText: true

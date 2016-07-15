@@ -26,5 +26,10 @@
         <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="service" />
       </gmd:hierarchyLevel>
     </gmd:MD_Metadata>
+    <gfc:FC_FeatureCatalogue xmlns:gfc="http://www.isotc211.org/2005/gfc" uuid="2f9f2420-4faa-432e-8931-685681493035">
+      <gmx:name xmlns:gmx="http://www.isotc211.org/2005/gmx">
+        <gco:CharacterString>Localisation des toilettes publiques sur la ville de Rennes (diffusion) - Dictionnaire des attributs</gco:CharacterString>
+      </gmx:name>
+    </gfc:FC_FeatureCatalogue>
   </csw:SearchResults>
 </csw:GetRecordsResponse>

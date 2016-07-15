@@ -19,6 +19,10 @@
                 "@elementType": "MD_Metadata",
                 "fileIdentifier": "22c47096-64da-44e8-a04e-58f9779c6995",
                 "hierarchyLevel": "service"
+            },
+            {
+                "@elementType": "FC_FeatureCatalogue",
+                "name": "Localisation des toilettes publiques sur la ville de Rennes (diffusion) - Dictionnaire des attributs"
             }
         ]
     }
