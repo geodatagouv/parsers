@@ -1,4 +1,7 @@
 FC_FeatureCatalogue:
+  attributes:
+    uuid:
+      type: string
   properties:
     name:
       accept: CharacterString
