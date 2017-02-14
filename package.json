@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sgmap-inspire/parsers.git"
+    "url": "git+https://github.com/inspireteam/parsers.git"
   },
   "keywords": [
     "Inspire",
@@ -39,9 +39,9 @@
   "author": "Jérôme Desboeufs <jerome.desboeufs@data.gouv.fr>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sgmap-inspire/parsers/issues"
+    "url": "https://github.com/inspireteam/parsers/issues"
   },
-  "homepage": "https://github.com/sgmap-inspire/parsers#readme",
+  "homepage": "https://github.com/inspireteam/parsers#readme",
   "dependencies": {
     "htmlparser2": "^3.9.1",
     "is-plain-obj": "^1.1.0",
