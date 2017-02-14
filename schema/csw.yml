@@ -4,6 +4,14 @@ GetRecordsResponse:
         SearchResults:
             renameTo: searchResults
 
+GetRecordByIdResponse:
+    type: object
+    container: true
+    acceptedChildren:
+        - MD_Metadata
+        - Record
+        - FC_FeatureCatalogue
+
 SearchResults:
     type: object
     attributes:

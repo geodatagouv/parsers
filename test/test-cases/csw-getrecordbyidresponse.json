@@ -1,0 +1,91 @@
+{
+    "children": [
+        {
+            "fileIdentifier": "b2d17406-57eb-4b62-8655-54f1e181aa28",
+            "language": "fre",
+            "characterSet": "utf8",
+            "hierarchyLevel": "dataset",
+            "hierarchyLevelName": "dataset",
+            "dateStamp": "2016-09-16T11:32:28.000Z",
+            "metadataStandardName": "ISO 19115:2003/19139",
+            "metadataStandardVersion": "1.0",
+            "identificationInfo": {
+                "citation": {
+                    "title": "Données SDAGE 2016-2021 - Eaux de surface",
+                    "date": [
+                        {
+                            "date": "2016-03-11T12:00:00.000Z",
+                            "dateType": "revision"
+                        }
+                    ],
+                    "identifier": "http://catalogue.adour-garonne.eaufrance.fr/catalog/srv/metadata/b2d17406-57eb-4b62-8655-54f1e181aa28"
+                },
+                "abstract": "Données d'états, objectifs, pressions des masses d'eau rivière, lac, côtières et de transition (selon le SDAGE 2016-2021).",
+                "graphicOverview": [
+                    {
+                        "fileName": "http://catalogue.adour-garonne.eaufrance.fr/catalog/srv/fre//resources.get?uuid=b2d17406-57eb-4b62-8655-54f1e181aa28&fname=SDAGE2016_objectifs_Etat.png"
+                    }
+                ],
+                "pointOfContact": [
+                    {
+                        "individualName": "Département Planification et Prospective",
+                        "organisationName": "Agence de l'Eau Adour Garonne",
+                        "contactInfo": {
+                            "address": {
+                                "electronicMailAddress": "geocatalogue@eau-adour-garonne.fr"
+                            }
+                        },
+                        "role": "resourceProvider"
+                    }
+                ],
+                "spatialResolution": {
+                    "equivalentScale": {
+                        "denominator": 50000
+                    }
+                },
+                "language": "fre",
+                "characterSet": "utf8",
+                "topicCategory": "planningCadastre",
+                "extent": [
+                    {
+                        "geographicElement": {
+                            "westBoundLongitude": -1.84,
+                            "southBoundLatitude": 42.51,
+                            "eastBoundLongitude": 3.88,
+                            "northBoundLatitude": 46.3
+                        }
+                    }
+                ]
+            },
+            "distributionInfo": {
+                "distributionFormat": [
+                    {
+                        "name": "Texte, ACCESS",
+                        "version": "1"
+                    }
+                ],
+                "transferOptions": [
+                    {
+                        "onLine": [
+                            {
+                                "linkage": "http://adour-garonne.eaufrance.fr/upload/DATA/THEMATIQUES/DCE/sdage2016_masse_eau_sup.zip"
+                            },
+                            {
+                                "linkage": "http://adour-garonne.eaufrance.fr/upload/DATA/THEMATIQUES/DCE/sdage2016_masse_eau_sup.mdb.zip"
+                            },
+                            {
+                                "linkage": "http://adour-garonne.eaufrance.fr/catalogue/recherche/DCE+referentiel"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "dataQualityInfo": {
+                "lineage": {
+                    "statement": "donnée non géographique de caractérisation des masses d'eau. Ces masses d'eau sont dérivées de bd carthage au 1/50000"
+                }
+            },
+            "@elementType": "MD_Metadata"
+        }
+    ]
+}
