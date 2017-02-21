@@ -56,5 +56,6 @@ describe('Real test cases: Record', function () {
     [
         'grandlyon-dc',
         'adour-garonne-dc',
+        'grand-lyon-dc-brief',
     ].forEach(testCase => createTestCase(testCase));
 });

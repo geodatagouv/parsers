@@ -10,6 +10,8 @@ GetRecordByIdResponse:
     acceptedChildren:
         - MD_Metadata
         - Record
+        - SummaryRecord
+        - BriefRecord
         - FC_FeatureCatalogue
 
 SearchResults:
@@ -27,6 +29,8 @@ SearchResults:
     acceptedChildren:
         - MD_Metadata
         - Record
+        - SummaryRecord
+        - BriefRecord
         - FC_FeatureCatalogue
 
 Capabilities:

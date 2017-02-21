@@ -1,4 +1,4 @@
-Record:
+RecordBase:
     properties:
         title:
             type: string
@@ -82,3 +82,12 @@ Record:
         source:
             array: true
             type: string
+
+Record:
+  extends: RecordBase
+
+SummaryRecord:
+  extends: RecordBase
+
+BriefRecord:
+  extends: RecordBase
