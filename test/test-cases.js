@@ -59,3 +59,9 @@ describe('Real test cases: Record', function () {
         'grand-lyon-dc-brief',
     ].forEach(testCase => createTestCase(testCase));
 });
+
+describe('Real test cases: ExceptionReport', function () {
+    [
+        'exception-report',
+    ].forEach(testCase => createTestCase(testCase));
+});

@@ -1,0 +1,19 @@
+ExceptionReport:
+  type: object
+  children:
+    Exception:
+      renameTo: exceptionReport
+
+Exception:
+  type: object
+  attributes:
+    exceptionCode:
+      type: string
+    locator:
+      type: string
+  children:
+    ExceptionText:
+      renameTo: message
+
+ExceptionText:
+  type: string
