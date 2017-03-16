@@ -158,7 +158,10 @@
             }
         ],
         "spatialResolution": {
-            "distance": "10"
+            "distance": {
+              "value": 10.0,
+              "unit": "m"
+            }
         },
         "language": "fre",
         "characterSet": "utf8",
@@ -166,10 +169,10 @@
         "extent": [
             {
                 "geographicElement": {
-                    "westBoundLongitude": "-2.12",
-                    "eastBoundLongitude": "-1.32",
-                    "southBoundLatitude": "47.87",
-                    "northBoundLatitude": "48.37"
+                    "westBoundLongitude": -2.12,
+                    "eastBoundLongitude": -1.32,
+                    "southBoundLatitude": 47.87,
+                    "northBoundLatitude": 48.37
                 }
             }
         ]

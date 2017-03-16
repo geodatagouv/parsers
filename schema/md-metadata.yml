@@ -200,7 +200,7 @@ MD_Resolution:
         equivalentScale:
             accept: MD_RepresentativeFraction
         distance:
-            type: string
+            accept: Distance
 
 MD_RepresentativeFraction:
     properties:
@@ -446,6 +446,17 @@ DateTime:
 
 Date:
     type: date
+
+Distance:
+  type: object
+  extractText:
+    key: value
+    type: number
+    format: float
+  attributes:
+    uom:
+      type: string
+      renameTo: unit
 
 CharacterString:
     type: string
