@@ -1,6 +1,6 @@
 {
   "name": "inspire-parser",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Powerful XML parser to deal with Inspire and OGC standarts",
   "main": "index.js",
   "bin": {
