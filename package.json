@@ -56,13 +56,13 @@
     "babel-plugin-transform-es2015-object-super": "^6.3.13",
     "babel-plugin-transform-es2015-shorthand-properties": "^6.3.13",
     "babelify": "^7.2.0",
-    "browserify": "^13.0.1",
-    "eslint": "^3.0.1",
+    "browserify": "^14.4",
+    "eslint": "^4.0",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.1",
     "js-yaml": "^3.4.6",
-    "mocha": "^2.3.4",
-    "uglify-js": "^2.6.1"
+    "mocha": "^3.4",
+    "uglify-js": "^3.0"
   },
   "babel": {
     "plugins": [
