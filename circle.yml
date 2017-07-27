@@ -1,11 +1,31 @@
-machine:
-  node:
-    version: 6
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:6
 
-dependencies:
-  post:
-    - npm install coveralls
+    working_directory: ~/repo
 
-test:
-  post:
-    - cat ./coverage/lcov.info | COVERALLS_REPO_TOKEN=BUKBHQCYAXV0L2n07AwuVT0tktuAgsS3o coveralls
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: yarn install
+
+      - run: yarn global add coveralls
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # run tests!
+      - run: yarn test
+
+      - run: cat ./coverage/lcov.info | COVERALLS_REPO_TOKEN=BUKBHQCYAXV0L2n07AwuVT0tktuAgsS3o coveralls
