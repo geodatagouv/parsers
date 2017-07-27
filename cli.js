@@ -1,4 +1,6 @@
 #! /usr/bin/env node
+'use strict'
+
 const Parser = require('./').Parser
 const parser = new Parser()
 

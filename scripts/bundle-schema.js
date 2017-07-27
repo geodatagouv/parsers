@@ -1,3 +1,5 @@
+'use strict'
+
 /* eslint comma-dangle: [2, "always-multiline"] */
 const jsYaml = require('js-yaml')
 const fs = require('fs')

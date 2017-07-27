@@ -1,5 +1,4 @@
 /* eslint-env mocha, node */
-/* eslint comma-dangle:0 */
 'use strict'
 
 const fs = require('fs')
