@@ -1,451 +1,451 @@
 MD_Metadata:
-    properties:
-        fileIdentifier:
-            type: string
-        metadataStandardName:
-            type: string
-        metadataStandardVersion:
-            type: string
-        characterSet:
-            type: string
-            accept: MD_CharacterSetCode
-            fallbackText: true
-        hierarchyLevel:
-            type: string
-            accept: MD_ScopeCode
-            fallbackText: true
-        hierarchyLevelName:
-            accept: CharacterString
-            fallbackText: true
-        language:
-            type: string
-            accept: LanguageCode
-            fallbackText: true
-        dateStamp:
-            type: date
-        contact:
-            accept: CI_ResponsibleParty
-        identificationInfo:
-            type: object
-            accept:
-                - MD_DataIdentification
-                - SV_ServiceIdentification
-        dataQualityInfo:
-            accept: DQ_DataQuality
-        distributionInfo:
-            accept: MD_Distribution
+  properties:
+    fileIdentifier:
+      type: string
+    metadataStandardName:
+      type: string
+    metadataStandardVersion:
+      type: string
+    characterSet:
+      type: string
+      accept: MD_CharacterSetCode
+      fallbackText: true
+    hierarchyLevel:
+      type: string
+      accept: MD_ScopeCode
+      fallbackText: true
+    hierarchyLevelName:
+      accept: CharacterString
+      fallbackText: true
+    language:
+      type: string
+      accept: LanguageCode
+      fallbackText: true
+    dateStamp:
+      type: date
+    contact:
+      accept: CI_ResponsibleParty
+    identificationInfo:
+      type: object
+      accept:
+        - MD_DataIdentification
+        - SV_ServiceIdentification
+    dataQualityInfo:
+      accept: DQ_DataQuality
+    distributionInfo:
+      accept: MD_Distribution
 
 MD_DataIdentification:
-    properties:
-        citation:
-            type: object
-            accept: CI_Citation
-        abstract:
-            type: string
-            accept: CharacterString
-            fallbackText: true
-        purpose:
-            type: string
-            accept: CharacterString
-            fallbackText: true
-        credit:
-            type: string
-            accept: CharacterString
-            fallbackText: true
-        language:
-            type: string
-            accept: LanguageCode
-            fallbackText: true
-        characterSet:
-            type: string
-            accept: MD_CharacterSetCode
-            fallbackText: true
-        topicCategory:
-            type: string
-        resourceMaintenance:
-            accept: MD_MaintenanceInformation
-            fallbackText: true
-        # resourceFormat:
-        #     type: MD_Format
-        extent:
-            array: true
-            type: object
-            accept: EX_Extent
-        descriptiveKeywords:
-            type: object
-            array: true
-            accept: MD_Keywords
-        pointOfContact:
-            array: true
-            accept: CI_ResponsibleParty
-        graphicOverview:
-            array: true
-            accept: MD_BrowseGraphic
-        spatialResolution:
-            accept: MD_Resolution
-        spatialRepresentationType:
-            accept: MD_SpatialRepresentationTypeCode
-            fallbackText: true
-        status:
-            accept: MD_ProgressCode
-            fallbackText: true
+  properties:
+    citation:
+      type: object
+      accept: CI_Citation
+    abstract:
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    purpose:
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    credit:
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    language:
+      type: string
+      accept: LanguageCode
+      fallbackText: true
+    characterSet:
+      type: string
+      accept: MD_CharacterSetCode
+      fallbackText: true
+    topicCategory:
+      type: string
+    resourceMaintenance:
+      accept: MD_MaintenanceInformation
+      fallbackText: true
+    # resourceFormat:
+    #   type: MD_Format
+    extent:
+      array: true
+      type: object
+      accept: EX_Extent
+    descriptiveKeywords:
+      type: object
+      array: true
+      accept: MD_Keywords
+    pointOfContact:
+      array: true
+      accept: CI_ResponsibleParty
+    graphicOverview:
+      array: true
+      accept: MD_BrowseGraphic
+    spatialResolution:
+      accept: MD_Resolution
+    spatialRepresentationType:
+      accept: MD_SpatialRepresentationTypeCode
+      fallbackText: true
+    status:
+      accept: MD_ProgressCode
+      fallbackText: true
 
 SV_ServiceIdentification:
-    properties:
-        citation:
-            type: object
-            accept: CI_Citation
-        abstract:
-            type: string
-            accept: CharacterString
-            fallbackText: true
-        purpose:
-            type: string
-            accept: CharacterString
-            fallbackText: true
-        credit:
-            type: string
-            accept: CharacterString
-            fallbackText: true
-        language:
-            type: string
-            accept: LanguageCode
-            fallbackText: true
-        characterSet:
-            type: string
-            accept: MD_CharacterSetCode
-            fallbackText: true
-        topicCategory:
-            type: string
-        resourceMaintenance:
-            accept: MD_MaintenanceInformation
-            fallbackText: true
-        # resourceFormat:
-        #     type: MD_Format
-        extent:
-            array: true
-            type: object
-            accept: EX_Extent
-        descriptiveKeywords:
-            type: object
-            array: true
-            accept: MD_Keywords
-        pointOfContact:
-            array: true
-            accept: CI_ResponsibleParty
-        graphicOverview:
-            array: true
-            accept: MD_BrowseGraphic
-        spatialResolution:
-            accept: MD_Resolution
-        spatialRepresentationType:
-            accept: MD_SpatialRepresentationTypeCode
-            fallbackText: true
-        status:
-            accept: MD_ProgressCode
-            fallbackText: true
-        couplingType:
-            accept: SV_CouplingType
-            fallbackText: true
-        serviceType:
-            accept:
-                - CharacterString
-                - LocalName
-            fallbackText: true
-        serviceTypeVersion:
-            accept: CharacterString
-            fallbackText: true
-        coupledResource:
-            array: true
-            accept: SV_CoupledResource
+  properties:
+    citation:
+      type: object
+      accept: CI_Citation
+    abstract:
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    purpose:
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    credit:
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    language:
+      type: string
+      accept: LanguageCode
+      fallbackText: true
+    characterSet:
+      type: string
+      accept: MD_CharacterSetCode
+      fallbackText: true
+    topicCategory:
+      type: string
+    resourceMaintenance:
+      accept: MD_MaintenanceInformation
+      fallbackText: true
+    # resourceFormat:
+    #   type: MD_Format
+    extent:
+      array: true
+      type: object
+      accept: EX_Extent
+    descriptiveKeywords:
+      type: object
+      array: true
+      accept: MD_Keywords
+    pointOfContact:
+      array: true
+      accept: CI_ResponsibleParty
+    graphicOverview:
+      array: true
+      accept: MD_BrowseGraphic
+    spatialResolution:
+      accept: MD_Resolution
+    spatialRepresentationType:
+      accept: MD_SpatialRepresentationTypeCode
+      fallbackText: true
+    status:
+      accept: MD_ProgressCode
+      fallbackText: true
+    couplingType:
+      accept: SV_CouplingType
+      fallbackText: true
+    serviceType:
+      accept:
+        - CharacterString
+        - LocalName
+      fallbackText: true
+    serviceTypeVersion:
+      accept: CharacterString
+      fallbackText: true
+    coupledResource:
+      array: true
+      accept: SV_CoupledResource
 
 SV_CoupledResource:
-    properties:
-        identifier:
-            accept: CharacterString
-            fallbackText: true
-        operationName:
-            accept: CharacterString
-            fallbackText: true
-        ScopedName:
-            type: string
-            renameTo: scopedName
+  properties:
+    identifier:
+      accept: CharacterString
+      fallbackText: true
+    operationName:
+      accept: CharacterString
+      fallbackText: true
+    ScopedName:
+      type: string
+      renameTo: scopedName
 
 MD_Distribution:
-    properties:
-        distributionFormat:
-            array: true
-            accept: MD_Format
-        transferOptions:
-            array: true
-            accept: MD_DigitalTransferOptions
+  properties:
+    distributionFormat:
+      array: true
+      accept: MD_Format
+    transferOptions:
+      array: true
+      accept: MD_DigitalTransferOptions
 
 MD_Format:
-    properties:
-        name:
-            accept: CharacterString
-            fallbackText: true
-        version:
-            accept: CharacterString
-            fallbackText: true
+  properties:
+    name:
+      accept: CharacterString
+      fallbackText: true
+    version:
+      accept: CharacterString
+      fallbackText: true
 
 MD_DigitalTransferOptions:
-    properties:
-        onLine:
-            array: true
-            accept: CI_OnlineResource
+  properties:
+    onLine:
+      array: true
+      accept: CI_OnlineResource
 
 MD_Resolution:
-    properties:
-        equivalentScale:
-            accept: MD_RepresentativeFraction
-        distance:
-            accept: Distance
+  properties:
+    equivalentScale:
+      accept: MD_RepresentativeFraction
+    distance:
+      accept: Distance
 
 MD_RepresentativeFraction:
-    properties:
-        denominator:
-            type: integer
+  properties:
+    denominator:
+      type: integer
 
 DQ_DataQuality:
-    properties:
-        lineage:
-            accept: LI_Lineage
-        scope:
-            accept: DQ_Scope
+  properties:
+    lineage:
+      accept: LI_Lineage
+    scope:
+      accept: DQ_Scope
 
 LI_Lineage:
-    properties:
-        statement:
-            accept: CharacterString
-            fallbackText: true
+  properties:
+    statement:
+      accept: CharacterString
+      fallbackText: true
 
 DQ_Scope:
-    properties:
-        level:
-            accept: MD_ScopeCode
-            fallbackText: true
-        levelDescription:
-            accept: MD_ScopeDescription
+  properties:
+    level:
+      accept: MD_ScopeCode
+      fallbackText: true
+    levelDescription:
+      accept: MD_ScopeDescription
 
 MD_ScopeDescription:
-    properties:
-        other:
-            accept: CharacterString
-            fallbackText: true
+  properties:
+    other:
+      accept: CharacterString
+      fallbackText: true
 
 CI_Citation:
-    properties:
-        title:
-            accept: CharacterString
-            fallbackText: true
-        alternateTitle:
-            accept: CharacterString
-            fallbackText: true
-        edition:
-            type: date
-        identifier:
-            type: string
-        date:
-            accept: CI_Date
-            array: true
+  properties:
+    title:
+      accept: CharacterString
+      fallbackText: true
+    alternateTitle:
+      accept: CharacterString
+      fallbackText: true
+    edition:
+      type: date
+    identifier:
+      type: string
+    date:
+      accept: CI_Date
+      array: true
 
 CI_Date:
-    properties:
-        date:
-            accept:
-                - Date
-                - DateTime
-            fallbackText: true
-        dateType:
-            accept: CI_DateTypeCode
-            fallbackText: true
+  properties:
+    date:
+      accept:
+        - Date
+        - DateTime
+      fallbackText: true
+    dateType:
+      accept: CI_DateTypeCode
+      fallbackText: true
 
 CI_ResponsibleParty:
-    properties:
-        organisationName:
-            type: string
-        individualName:
-            type: string
-        positionName:
-            type: string
-        contactInfo:
-            accept: CI_Contact
-        role:
-            accept: CI_RoleCode
-            fallbackText: true
+  properties:
+    organisationName:
+      type: string
+    individualName:
+      type: string
+    positionName:
+      type: string
+    contactInfo:
+      accept: CI_Contact
+    role:
+      accept: CI_RoleCode
+      fallbackText: true
 
 CI_Contact:
-    properties:
-        address:
-            accept: CI_Address
-        phone:
-            accept: CI_Telephone
-        hoursOfService:
-            accept: CharacterString
-            fallbackText: true
-        onlineResource:
-            accept: CI_OnlineResource
+  properties:
+    address:
+      accept: CI_Address
+    phone:
+      accept: CI_Telephone
+    hoursOfService:
+      accept: CharacterString
+      fallbackText: true
+    onlineResource:
+      accept: CI_OnlineResource
 
 CI_OnlineResource:
-    properties:
-        linkage:
-            type: string
-        protocol:
-            type: string
-        description:
-            accept: CharacterString
-            fallbackText: true
-        name:
-            accept: CharacterString
-            fallbackText: true
-        function:
-            accept: CI_OnLineFunctionCode
-            fallbackText: true
+  properties:
+    linkage:
+      type: string
+    protocol:
+      type: string
+    description:
+      accept: CharacterString
+      fallbackText: true
+    name:
+      accept: CharacterString
+      fallbackText: true
+    function:
+      accept: CI_OnLineFunctionCode
+      fallbackText: true
 
 CI_Telephone:
-    properties:
-        voice:
-            accept: CharacterString
-            fallbackText: true
-        facsimile:
-            accept: CharacterString
-            fallbackText: true
+  properties:
+    voice:
+      accept: CharacterString
+      fallbackText: true
+    facsimile:
+      accept: CharacterString
+      fallbackText: true
 
 CI_Address:
-    properties:
-        deliveryPoint:
-            array: true
-            accept: CharacterString
-            fallbackText: true
-        city:
-            accept: CharacterString
-            fallbackText: true
-        administrativeArea:
-            accept: CharacterString
-            fallbackText: true
-        postalCode:
-            accept: CharacterString
-            fallbackText: true
-        country:
-            accept: CharacterString
-            fallbackText: true
-        electronicMailAddress:
-            accept: CharacterString
-            fallbackText: true
+  properties:
+    deliveryPoint:
+      array: true
+      accept: CharacterString
+      fallbackText: true
+    city:
+      accept: CharacterString
+      fallbackText: true
+    administrativeArea:
+      accept: CharacterString
+      fallbackText: true
+    postalCode:
+      accept: CharacterString
+      fallbackText: true
+    country:
+      accept: CharacterString
+      fallbackText: true
+    electronicMailAddress:
+      accept: CharacterString
+      fallbackText: true
 
 MD_MaintenanceInformation:
-    properties:
-        maintenanceAndUpdateFrequency:
-            accept: MD_MaintenanceFrequencyCode
-            fallbackText: true
+  properties:
+    maintenanceAndUpdateFrequency:
+      accept: MD_MaintenanceFrequencyCode
+      fallbackText: true
 
 EX_Extent:
-    properties:
-        description:
-            type: string
-            accept: CharacterString
-            fallbackText: true
-        geographicElement:
-            type: object
-            accept: EX_GeographicBoundingBox
+  properties:
+    description:
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    geographicElement:
+      type: object
+      accept: EX_GeographicBoundingBox
 
 EX_GeographicBoundingBox:
-    properties:
-        westBoundLongitude:
-            type: number
-            format: float
-        eastBoundLongitude:
-            type: number
-            format: float
-        southBoundLatitude:
-            type: number
-            format: float
-        northBoundLatitude:
-            type: number
-            format: float
+  properties:
+    westBoundLongitude:
+      type: number
+      format: float
+    eastBoundLongitude:
+      type: number
+      format: float
+    southBoundLatitude:
+      type: number
+      format: float
+    northBoundLatitude:
+      type: number
+      format: float
 
 MD_Keywords:
-    properties:
-        keyword:
-            array: true
-            accept: CharacterString
-            fallbackText: true
-        type:
-            accept: MD_KeywordTypeCode
-            fallbackText: true
-        thesaurusName:
-            accept: CI_Citation
+  properties:
+    keyword:
+      array: true
+      accept: CharacterString
+      fallbackText: true
+    type:
+      accept: MD_KeywordTypeCode
+      fallbackText: true
+    thesaurusName:
+      accept: CI_Citation
 
 MD_BrowseGraphic:
-    properties:
-        fileName:
-            type: string
-        fileDescription:
-            type: string
-        fileType:
-            type: string
+  properties:
+    fileName:
+      type: string
+    fileDescription:
+      type: string
+    fileType:
+      type: string
 
 MD_CharacterSetCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 MD_ScopeCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 LanguageCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 MD_MaintenanceFrequencyCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 CI_RoleCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 MD_KeywordTypeCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 CI_DateTypeCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 MD_ProgressCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 CI_OnLineFunctionCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 MD_SpatialRepresentationTypeCode:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 SV_CouplingType:
-    type: string
-    from: attributes
-    attribute: codeListValue
+  type: string
+  from: attributes
+  attribute: codeListValue
 
 DateTime:
-    type: date
+  type: date
 
 Date:
-    type: date
+  type: date
 
 Distance:
   type: object
@@ -459,7 +459,7 @@ Distance:
       renameTo: unit
 
 CharacterString:
-    type: string
+  type: string
 
 LocalName:
-    type: string
+  type: string
