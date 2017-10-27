@@ -8,7 +8,7 @@ const consolidate = require('../lib/consolidation').consolidateDefinition
 const definition = {};
 
 [
-  'md-metadata',
+  'gmd/main',
   'csw',
   'dublin-core',
   'fc-featurecatalogue',
