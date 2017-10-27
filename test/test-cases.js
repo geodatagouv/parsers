@@ -24,6 +24,7 @@ describe('Real test cases: MD_Metadata', function () {
     'ifremer-multilang',
     'siglr-malformed',
     'geobretagne-service-coupled',
+    'geobretagne-bano',
   ].forEach(testCase => createTestCase(testCase))
 })
 

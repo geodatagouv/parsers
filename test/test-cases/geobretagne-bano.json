@@ -1,0 +1,193 @@
+{
+    "fileIdentifier": "9ffb161b-d8d8-4ec4-bde5-a03104300df8",
+    "language": "fre",
+    "characterSet": "utf8",
+    "hierarchyLevel": "dataset",
+    "contact": {
+        "individualName": "équipe GéoBretagne",
+        "organisationName": "partenariat GéoBretagne",
+        "contactInfo": {
+            "address": {
+                "deliveryPoint": [
+                    "10 rue Maurice Fabre"
+                ],
+                "city": "RENNES",
+                "postalCode": "35065",
+                "country": "France",
+                "electronicMailAddress": "coprev.dreal-bretagne@developpement-durable.gouv.fr"
+            }
+        },
+        "role": "pointOfContact"
+    },
+    "dateStamp": "2017-10-27T09:15:21.000Z",
+    "metadataStandardName": "ISO 19115",
+    "metadataStandardVersion": "1.0",
+    "identificationInfo": {
+        "citation": {
+            "title": "Base d'Adresse Nationale Ouverte export Bretagne",
+            "alternateTitle": "BANO Bretagne",
+            "date": [
+                {
+                    "date": "2014-09-15T00:00:00.000Z",
+                    "dateType": "publication"
+                }
+            ],
+            "edition": null,
+            "identifier": "fr-openstreetmap-bano-bretagne"
+        },
+        "abstract": "La Base Adresses Nationale Ouverte (BANO) est une initiative d'OpenStreetMap France. Elle a pour objet la constitution d'une base la plus complète possible de points d'adresse à l'échelle de la France.\n\nPour chaque adresse:\n- id (unique) : code_insee + codefantoir + numero\n- numero : numéro dans la voie avec suffixe (ex: 1, 1BIS, 1D)\n- voie : nom de voie\n- code_post : code postal sur 5 caractères\n- nom_comm : nom de la commune\n- source : OSM = donnée directement issue d'OpenStreetMap, OD = donnée provenant de source opendata locale, O+O = donnée de source opendata enrichie par OpenStreetMap, CAD = donnée directement issue du cadastre, C+O = donnée du cadastre enrichie par OSM (nom de voie par exemple)\n- lat : latitude en degrés décimaux WGS84\n- lon : longitude en degrés décimaux WGS84",
+        "purpose": "Son propos principal, dans un premier temps, est de rendre accessible, sur la couverture la plus large (a minima toutes les communes vectorielles du cadastre), la réalisation d'opérations de géocodage (quelle position correspond à cette adresse) et de géocodage inversé (quelle(s) adresse(s) correspond(ent) à cette position).\nIl n'y a pas à ce stade de prétention de couvrir en sachant les distinguer les adresses au pas de porte, à la boîte aux lettres, au point d'accès piéton et au point d'accès pour automobile. Il y a suffisamment peu de matière combinant ces nuances aujourd'hui pour que le propos de la BANO soit centré sur un besoin \"primaire\" de fournir un point par adresse.",
+        "status": "onGoing",
+        "pointOfContact": [
+            {
+                "individualName": "association OpenStreetMap France",
+                "organisationName": "OpenStreetMap",
+                "contactInfo": {
+                    "address": {
+                        "country": "France",
+                        "electronicMailAddress": "bano@openstreetmap.fr"
+                    }
+                },
+                "role": "distributor"
+            }
+        ],
+        "resourceMaintenance": {
+            "maintenanceAndUpdateFrequency": "continual"
+        },
+        "graphicOverview": [
+            {
+                "fileName": "http://geobretagne.fr:80/geonetwork/srv/eng/resources.get?uuid=9ffb161b-d8d8-4ec4-bde5-a03104300df8&fname=400px-Plaque-adresse-42_s.png",
+                "fileDescription": "thumbnail",
+                "fileType": "png"
+            },
+            {
+                "fileName": "http://geobretagne.fr:80/geonetwork/srv/eng/resources.get?uuid=9ffb161b-d8d8-4ec4-bde5-a03104300df8&fname=400px-Plaque-adresse-42.jpg",
+                "fileDescription": "large_thumbnail",
+                "fileType": "jpg"
+            }
+        ],
+        "descriptiveKeywords": [
+            {
+                "keyword": [
+                    "référentiels : voies et adresses"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "GéoBretagne v 2.0",
+                    "date": [
+                        {
+                            "date": "2014-01-13T00:00:00.000Z",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.geobretagne"
+                }
+            },
+            {
+                "keyword": [
+                    "Adresses"
+                ],
+                "type": "theme",
+                "thesaurusName": {
+                    "title": "INSPIRE themes",
+                    "date": [
+                        {
+                            "date": "2008-06-01T00:00:00.000Z",
+                            "dateType": "publication"
+                        }
+                    ],
+                    "identifier": "geonetwork.thesaurus.external.theme.inspire-theme"
+                }
+            },
+            {
+                "keyword": [
+                    "adresse"
+                ],
+                "type": "theme"
+            }
+        ],
+        "resourceConstraints": [
+            {
+                "useLimitation": [
+                    "Licence OdBL http://www.openstreetmap.org/copyright/fr",
+                    "mention obligatoire \"projet BANO ODbL\""
+                ],
+                "accessConstraints": [
+                    "otherRestrictions"
+                ],
+                "useConstraints": [
+                    "license"
+                ],
+                "otherConstraints": [
+                    "Pas de restriction d’accès public"
+                ]
+            }
+        ],
+        "spatialRepresentationType": "vector",
+        "spatialResolution": {
+            "equivalentScale": {
+                "denominator": 5000
+            }
+        },
+        "language": "fre",
+        "topicCategory": "imageryBaseMapsEarthCover",
+        "extent": [
+            {
+                "description": "Bretagne",
+                "geographicElement": {
+                    "westBoundLongitude": -5.235156248935555,
+                    "eastBoundLongitude": -0.9285156245350485,
+                    "southBoundLatitude": 47.18235916750418,
+                    "northBoundLatitude": 49.016365928707785
+                }
+            }
+        ]
+    },
+    "distributionInfo": {
+        "distributionFormat": [
+            {
+                "name": "ESRI Shapefile",
+                "version": "1.0"
+            }
+        ],
+        "transferOptions": [
+            {
+                "onLine": [
+                    {
+                        "linkage": "http://bano.openstreetmap.fr/data/",
+                        "protocol": "WWW:DOWNLOAD-1.0-http--download",
+                        "description": "téléchargement simple des données en CSV ou SHAPE"
+                    }
+                ]
+            },
+            {
+                "onLine": [
+                    {
+                        "linkage": "https://geobretagne.fr/geoserver/osm/wms?SERVICE=WMS&REQUEST=GetCapabilities",
+                        "protocol": "OGC:WMS",
+                        "name": "bano",
+                        "description": "Base d'Adresse Nationale Ouverte export Bretagne (WMS)"
+                    }
+                ]
+            },
+            {
+                "onLine": [
+                    {
+                        "linkage": "https://geobretagne.fr/geoserver/osm/wfs?SERVICE=WFS&REQUEST=GetCapabilities",
+                        "protocol": "OGC:WFS",
+                        "name": "bano",
+                        "description": "Base d'Adresse Nationale Ouverte export Bretagne (WFS)"
+                    }
+                ]
+            }
+        ]
+    },
+    "dataQualityInfo": {
+        "scope": {
+            "level": "dataset"
+        },
+        "lineage": {
+            "statement": "BANO est une base de données composite, constituée à partir de différentes sources:\n- OpenStreetMap (ODbL)\n- données disponibles en opendata\n  - Arles Crau Camargue Montagnette (Licence Ouverte) - juin 2014\n  - Ville de Montpellier (Licence Ouverte) - janvier 2014\n  - Toulouse Métropole (ODbL) - juin 2014\n  - Rennes Métropole (ODbL) - juin 2014\n  - Mulhouse Alsace Agglomération (Licence Ouverte) - septembre 2013\n  - Grand Nancy (ODbL) - septembre 2013\n  - Nantes Métropole (ODbL) - avril 2014\n  - Grand Lyon (Licence Ouverte) - mars 2014\n  - Communauté Urbaine de Bordeaux (ODbL) - juin 2014\n  - Communauté Urbaine de Strasbourg (Licence Ouverte) - février 2014\n  - Communauté Urbaine de Lille Métropole (Licence Ouverte) - juin 2014\n- données adresses collectées sur le site du cadastre et fichier FANTOIR (Licence Ouverte) - 2014"
+        }
+    }
+}
