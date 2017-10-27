@@ -1,0 +1,34 @@
+SV_ServiceIdentification:
+  extends: MD_AbstractIdentification
+  properties:
+    couplingType:
+      accept: SV_CouplingType
+      fallbackText: true
+    serviceType:
+      accept:
+        - CharacterString
+        - LocalName
+      fallbackText: true
+    serviceTypeVersion:
+      accept: CharacterString
+      fallbackText: true
+    coupledResource:
+      array: true
+      accept: SV_CoupledResource
+
+SV_CoupledResource:
+  properties:
+    identifier:
+      accept: CharacterString
+      fallbackText: true
+    operationName:
+      accept: CharacterString
+      fallbackText: true
+    ScopedName:
+      type: string
+      renameTo: scopedName
+
+SV_CouplingType:
+  type: string
+  from: attributes
+  attribute: codeListValue

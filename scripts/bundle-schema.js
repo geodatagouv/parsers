@@ -9,6 +9,7 @@ const definition = {};
 
 [
   'gmd/main',
+  'gmd/service',
   'csw',
   'dublin-core',
   'fc-featurecatalogue',
