@@ -51,131 +51,144 @@
                     "CC de la Basse Automne",
                     "CC de la Plaine d'Estrées"
                 ],
+                "type": "place",
                 "thesaurusName": {
+                    "title": "EPCI",
                     "date": [
                         {
                             "date": "2013-03-11T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
-                    "identifier": "geonetwork.thesaurus.external.place.geopicardie-epci",
-                    "title": "EPCI"
-                },
-                "type": "place"
+                    "identifier": "geonetwork.thesaurus.external.place.geopicardie-epci"
+                }
             },
             {
                 "keyword": [
                     "zone urbaine",
                     "occupation du sol"
                 ],
+                "type": "theme",
                 "thesaurusName": {
+                    "title": "GEMET - Concepts, version 2.4",
                     "date": [
                         {
                             "date": "2010-01-13T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
-                    "identifier": "geonetwork.thesaurus.external.theme.gemet",
-                    "title": "GEMET - Concepts, version 2.4"
-                },
-                "type": "theme"
+                    "identifier": "geonetwork.thesaurus.external.theme.gemet"
+                }
             },
             {
                 "keyword": [
                     "Occupation des terres"
                 ],
+                "type": "theme",
                 "thesaurusName": {
+                    "title": "GEMET - INSPIRE themes, version 1.0 INSPIRE themes",
                     "date": [
                         {
                             "date": "2008-06-01T00:00:00.000Z",
                             "dateType": "publication"
                         }
                     ],
-                    "identifier": "geonetwork.thesaurus.external.theme.inspire-theme",
-                    "title": "GEMET - INSPIRE themes, version 1.0 INSPIRE themes"
-                },
-                "type": "theme"
+                    "identifier": "geonetwork.thesaurus.external.theme.inspire-theme"
+                }
             }
         ],
-        "language": "fre",
-        "characterSet": "8859part1",
+        "resourceConstraints": [
+            {
+                "useLimitation": [
+                    "Utilisation libre sous réserve de mentionner la source et le millésime des données : SIGOVal’[2011] - Oise-la-Vallée"
+                ],
+                "accessConstraints": [
+                    "otherRestrictions"
+                ],
+                "otherConstraints": [
+                    "Pas de restriction d’accès public"
+                ]
+            }
+        ],
         "spatialResolution": {
             "equivalentScale": {
                 "denominator": 5000
             }
         },
+        "language": "fre",
+        "characterSet": "8859part1",
         "topicCategory": "imageryBaseMapsEarthCover",
         "extent": [
             {
                 "description": "CC des Pays d'Oise et d'Halatte",
                 "geographicElement": {
+                    "westBoundLongitude": 2.48302188904224,
                     "eastBoundLongitude": 2.7161891493348334,
-                    "northBoundLatitude": 49.39528872551829,
                     "southBoundLatitude": 49.2426356903796,
-                    "westBoundLongitude": 2.48302188904224
+                    "northBoundLatitude": 49.39528872551829
                 }
             },
             {
                 "description": "CC des Trois Forêts",
                 "geographicElement": {
+                    "westBoundLongitude": 2.5244509624880678,
                     "eastBoundLongitude": 2.655732054287982,
-                    "northBoundLatitude": 49.27950123379009,
                     "southBoundLatitude": 49.1753122065756,
-                    "westBoundLongitude": 2.5244509624880678
+                    "northBoundLatitude": 49.27950123379009
                 }
             },
             {
                 "description": "CC du Liancourtois",
                 "geographicElement": {
+                    "westBoundLongitude": 2.396762036959161,
                     "eastBoundLongitude": 2.5334661147872968,
-                    "northBoundLatitude": 49.36223005164863,
                     "southBoundLatitude": 49.28192034844968,
-                    "westBoundLongitude": 2.396762036959161
+                    "northBoundLatitude": 49.36223005164863
                 }
             },
             {
                 "description": "CA Creilloise",
                 "geographicElement": {
+                    "westBoundLongitude": 2.4019487246742974,
                     "eastBoundLongitude": 2.5129313952499537,
-                    "northBoundLatitude": 49.30275345953062,
                     "southBoundLatitude": 49.23685825986413,
-                    "westBoundLongitude": 2.4019487246742974
+                    "northBoundLatitude": 49.30275345953062
                 }
             },
             {
                 "description": "CA de la Région de Compiègne",
                 "geographicElement": {
+                    "westBoundLongitude": 2.71624316357964,
                     "eastBoundLongitude": 2.970309911400828,
-                    "northBoundLatitude": 49.461275131981594,
                     "southBoundLatitude": 49.308062952667235,
-                    "westBoundLongitude": 2.71624316357964
+                    "northBoundLatitude": 49.461275131981594
                 }
             },
             {
                 "description": "CC Pierre - Sud - Oise",
                 "geographicElement": {
+                    "westBoundLongitude": 2.3525868060722352,
                     "eastBoundLongitude": 2.4871059459167637,
-                    "northBoundLatitude": 49.30941802472581,
                     "southBoundLatitude": 49.202662175076306,
-                    "westBoundLongitude": 2.3525868060722352
+                    "northBoundLatitude": 49.30941802472581
                 }
             },
             {
                 "description": "CC de la Basse Automne",
                 "geographicElement": {
+                    "westBoundLongitude": 2.704325920282371,
                     "eastBoundLongitude": 2.838215776478177,
-                    "northBoundLatitude": 49.34365283878711,
                     "southBoundLatitude": 49.24583337036559,
-                    "westBoundLongitude": 2.704325920282371
+                    "northBoundLatitude": 49.34365283878711
                 }
             },
             {
                 "description": "CC de la Plaine d'Estrées",
                 "geographicElement": {
+                    "westBoundLongitude": 2.5322820734773956,
                     "eastBoundLongitude": 2.758099339847574,
-                    "northBoundLatitude": 49.488305975299824,
                     "southBoundLatitude": 49.31187011715845,
-                    "westBoundLongitude": 2.5322820734773956
+                    "northBoundLatitude": 49.488305975299824
                 }
             }
         ]
@@ -191,16 +204,16 @@
             {
                 "onLine": [
                     {
-                        "description": "Tâche urbaine - Oise-la-Vallée (1947) - couche WMS du portail de GéoPicardie",
                         "linkage": "http://www.geopicardie.fr/geoserver/wms",
+                        "protocol": "OGC:WMS",
                         "name": "olv:fon_tu_geo_tacheurbaine_p_5_1947",
-                        "protocol": "OGC:WMS"
+                        "description": "Tâche urbaine - Oise-la-Vallée (1947) - couche WMS du portail de GéoPicardie"
                     },
                     {
-                        "description": "Lien vers la fiche de métadonnées d'origine",
                         "linkage": "http://www.geopicardie.fr/geonetwork/apps/georchestra/?uuid=ff65bbd1-ab5c-4118-8b1a-2cae338efacf",
+                        "protocol": "WWW:LINK-1.0-http--link",
                         "name": "Lien vers la fiche de métadonnées d'origine",
-                        "protocol": "WWW:LINK-1.0-http--link"
+                        "description": "Lien vers la fiche de métadonnées d'origine"
                     }
                 ]
             }

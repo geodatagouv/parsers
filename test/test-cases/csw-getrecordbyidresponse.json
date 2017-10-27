@@ -38,6 +38,13 @@
                         "role": "resourceProvider"
                     }
                 ],
+                "resourceConstraints": [
+                    {
+                        "accessConstraints": [
+                            "intellectualPropertyRights"
+                        ]
+                    }
+                ],
                 "spatialResolution": {
                     "equivalentScale": {
                         "denominator": 50000

@@ -157,10 +157,27 @@
                 }
             }
         ],
+        "resourceConstraints": [
+            {
+                "useLimitation": [
+                    "Réutilisation libre sous réserve de la mention obligatoire suivante : \"source : Référentiel voies et adresses / RVA - [date de révision] - Rennes Métropole\"",
+                    "Licence ODbL 1.0\nhttp://www.data.rennes-metropole.fr/notre-demarche/licence-odbl-ville-de-rennes-et-rennes-metropole/"
+                ],
+                "accessConstraints": [
+                    "otherRestrictions"
+                ],
+                "useConstraints": [
+                    "license"
+                ],
+                "otherConstraints": [
+                    "Pas de restriction d’accès public"
+                ]
+            }
+        ],
         "spatialResolution": {
             "distance": {
-              "value": 10.0,
-              "unit": "m"
+                "unit": "m",
+                "value": 10
             }
         },
         "language": "fre",
@@ -200,18 +217,18 @@
                         "protocol": "WWW:DOWNLOAD-1.0-http--download"
                     },
                     {
-                        "description": "GéoRennesMétropole",
                         "linkage": "http://geo.rennesmetropole.fr/",
-                        "protocol": "WWW:LINK-1.0-http--link"
+                        "protocol": "WWW:LINK-1.0-http--link",
+                        "description": "GéoRennesMétropole"
                     }
                 ]
             },
             {
                 "onLine": [
                     {
-                        "description": "Visualiseur GéoBretagne",
                         "linkage": "http://geobretagne.fr/mapfishapp/",
-                        "protocol": "WWW:LINK-1.0-http--link"
+                        "protocol": "WWW:LINK-1.0-http--link",
+                        "description": "Visualiseur GéoBretagne"
                     }
                 ]
             }

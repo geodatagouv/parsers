@@ -87,6 +87,19 @@
                 "type": "theme"
             }
         ],
+        "resourceConstraints": [
+            {
+                "useLimitation": [
+                    "Aucune condition ne s'applique"
+                ],
+                "accessConstraints": [
+                    "otherRestrictions"
+                ],
+                "otherConstraints": [
+                    "Pas de restriction d’accès public selon INSPIRE"
+                ]
+            }
+        ],
         "serviceType": "download",
         "serviceTypeVersion": "2.0.0",
         "extent": [

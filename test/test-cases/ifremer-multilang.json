@@ -27,8 +27,8 @@
             "identifier": "SITES_PRODUCTIONS_CONCHYLICOLES_P"
         },
         "abstract": "Les sites de production conchylicoles peuvent prendre plusieurs réalités. Parfois, leur identification est réglementaire et sert à la classification sanitaire des zones de productions. Dans le projet Euroshell, le choix a été fait de cartographier les zones de production dont l’identification a du sens à la fois pour les scientifiques et pour les professionnels. Il s’agit alors d’un nombre restreint de zones, souvent correspondant à une réalité hydrographique. En effet, la conchyliculture est majoritairement installée dans des estuaires, embouchures, baies, fjords, rias ou lagunes.\r\n\r\nCette carte présente les sites de production conchylicole français, qui regroupent chacun plusieurs zones. Quelques informations sont données concernant les espèces produites, le nombre d'entreprises et/ou concessions et/ou producteurs, la quantité de production approximative.",
-        "status": "onGoing",
         "credit": "Ifremer",
+        "status": "onGoing",
         "pointOfContact": [
             {
                 "organisationName": "Ifremer",
@@ -103,10 +103,22 @@
                 "type": "theme"
             }
         ],
+        "resourceConstraints": [
+            {
+                "accessConstraints": [
+                    "copyright",
+                    "otherRestrictions"
+                ],
+                "otherConstraints": [
+                    "EUROSHELL",
+                    "Partenaires du projet EUROSHELL"
+                ]
+            }
+        ],
+        "spatialRepresentationType": "vector",
         "language": "fre",
         "characterSet": "utf8",
         "topicCategory": "oceans",
-        "spatialRepresentationType": "vector",
         "extent": [
             {
                 "geographicElement": {

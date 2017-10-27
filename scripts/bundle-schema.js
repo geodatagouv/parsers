@@ -10,6 +10,7 @@ const definition = {};
 [
   'gmd/main',
   'gmd/service',
+  'gmd/constraints',
   'csw',
   'dublin-core',
   'fc-featurecatalogue',

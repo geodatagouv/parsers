@@ -89,12 +89,13 @@ MD_AbstractIdentification:
       fallbackText: true
     # resourceFormat:
     #   type: MD_Format
+    resourceConstraints:
+      array: true
+      accept: MD_LegalConstraints
 
 
 MD_DataIdentification:
   extends: MD_AbstractIdentification
-
-
 
 MD_Distribution:
   properties:

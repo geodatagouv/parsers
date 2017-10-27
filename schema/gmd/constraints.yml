@@ -1,0 +1,40 @@
+MD_AbstractConstraints:
+  properties:
+    useLimitation:
+      array: true
+      type: string
+      accept: CharacterString
+      fallbackText: true
+
+MD_LegalConstraints:
+  extends: MD_AbstractConstraints
+  properties:
+    otherConstraints:
+      array: true
+      type: string
+      accept: CharacterString
+      fallbackText: true
+    accessConstraints:
+      array: true
+      type: string
+      accept: MD_RestrictionCode
+      fallbackText: true
+    useConstraints:
+      array: true
+      type: string
+      accept: MD_RestrictionCode
+      fallbackText: true
+
+MD_RestrictionCode:
+  type: string
+  from: attributes
+  attribute: codeListValue
+  enum:
+    - copyright
+    - patent
+    - patentPending
+    - trademark
+    - license
+    - intellectualPropertyRights
+    - restricted
+    - otherRestrictions
