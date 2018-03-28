@@ -1,7 +1,7 @@
 'use strict'
 
-const Parser = require('./lib/parser')
 const once = require('once')
+const Parser = require('./lib/parser')
 
 function parse(xmlString, done) {
   done = once(done)

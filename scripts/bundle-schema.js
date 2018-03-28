@@ -1,8 +1,8 @@
 'use strict'
 
-/* eslint comma-dangle: [2, "always-multiline"] */
-const jsYaml = require('js-yaml')
+const {join} = require('path')
 const fs = require('fs')
+const jsYaml = require('js-yaml')
 const consolidate = require('../lib/consolidation').consolidateDefinition
 
 const definition = {};
@@ -14,9 +14,9 @@ const definition = {};
   'csw',
   'dublin-core',
   'fc-featurecatalogue',
-  'ows',
+  'ows'
 ].forEach(schemaName => {
-  Object.assign(definition, jsYaml.safeLoad(fs.readFileSync(__dirname + `/../schema/${schemaName}.yml`)))
+  Object.assign(definition, jsYaml.safeLoad(fs.readFileSync(join(__dirname, '..', 'schema', schemaName + '.yml'))))
 })
 
-fs.writeFileSync(__dirname + '/../bundled-schema.json', JSON.stringify(consolidate(definition), true, 2))
+fs.writeFileSync(join(__dirname, '..', 'bundled-schema.json'), JSON.stringify(consolidate(definition), true, 2))

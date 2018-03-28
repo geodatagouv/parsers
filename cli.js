@@ -1,7 +1,8 @@
 #! /usr/bin/env node
 'use strict'
 
-const Parser = require('./').Parser
+const {Parser} = require('.')
+
 const parser = new Parser()
 
 process.stdin.pipe(parser).once('result', result => {

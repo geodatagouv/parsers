@@ -1,14 +1,15 @@
 /* eslint-env mocha, node */
 'use strict'
 
+const {join} = require('path')
 const fs = require('fs')
 const expect = require('expect.js')
-const Parser = require('../').Parser
+const {Parser} = require('..')
 
 function createTestCase(name) {
-  it(name + ' should be parsed successfully', function (done) {
+  it(name + ' should be parsed successfully', done => {
     const parser = new Parser()
-    const xml = fs.createReadStream(__dirname + '/test-cases/' + name + '.xml')
+    const xml = fs.createReadStream(join(__dirname, 'test-cases', name + '.xml'))
     const expectedResult = require('./test-cases/' + name + '.json')
     xml.pipe(parser).once('result', result => {
       expect(JSON.parse(JSON.stringify(result.body))).to.eql(expectedResult)
@@ -17,51 +18,51 @@ function createTestCase(name) {
   })
 }
 
-describe('Real test cases: MD_Metadata', function () {
+describe('Real test cases: MD_Metadata', () => {
   [
     'geopicardie-tache-urbaine',
     'rennes-metropole-referentiel-adresse',
     'ifremer-multilang',
     'siglr-malformed',
     'geobretagne-service-coupled',
-    'geobretagne-bano',
+    'geobretagne-bano'
   ].forEach(testCase => createTestCase(testCase))
 })
 
-describe('Real test cases: FC_FeatureCatalogue', function () {
+describe('Real test cases: FC_FeatureCatalogue', () => {
   [
-    'geobretagne-featurecatalogue',
+    'geobretagne-featurecatalogue'
   ].forEach(testCase => createTestCase(testCase))
 })
 
-describe('Real test cases: GetRecordsResponse', function () {
+describe('Real test cases: GetRecordsResponse', () => {
   [
-    'csw-getrecordsresponse',
+    'csw-getrecordsresponse'
   ].forEach(testCase => createTestCase(testCase))
 })
 
-describe('Real test cases: GetRecordByIdResponse', function () {
+describe('Real test cases: GetRecordByIdResponse', () => {
   [
-    'csw-getrecordbyidresponse',
+    'csw-getrecordbyidresponse'
   ].forEach(testCase => createTestCase(testCase))
 })
 
-describe('Real test cases: Capabilities', function () {
+describe('Real test cases: Capabilities', () => {
   [
-    'csw-getcapabilities',
+    'csw-getcapabilities'
   ].forEach(testCase => createTestCase(testCase))
 })
 
-describe('Real test cases: Record', function () {
+describe('Real test cases: Record', () => {
   [
     'grandlyon-dc',
     'adour-garonne-dc',
-    'grand-lyon-dc-brief',
+    'grand-lyon-dc-brief'
   ].forEach(testCase => createTestCase(testCase))
 })
 
-describe('Real test cases: ExceptionReport', function () {
+describe('Real test cases: ExceptionReport', () => {
   [
-    'exception-report',
+    'exception-report'
   ].forEach(testCase => createTestCase(testCase))
 })

@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "test-unit": "istanbul cover _mocha",
-    "lint": "eslint test lib scripts *.js",
+    "lint": "xo scripts lib test *.js",
     "bundle-schema": "node scripts/bundle-schema",
     "test": "npm run lint && npm run bundle-schema && npm run test-unit",
     "prepublish": "npm run bundle-schema && npm run dist-browser",
@@ -59,12 +59,12 @@
     "babelify": "^8.0.0",
     "browserify": "^16.1.1",
     "coveralls": "^3.0.0",
-    "eslint": "^4.0",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.1",
     "js-yaml": "^3.4.6",
     "mocha": "^5.0.5",
-    "uglify-js": "^3.0"
+    "uglify-js": "^3.0",
+    "xo": "^0.20.3"
   },
   "babel": {
     "plugins": [
@@ -80,6 +80,10 @@
     "transform": [
       "babelify"
     ]
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
   },
   "engines": {
     "node": ">= 6.0"
